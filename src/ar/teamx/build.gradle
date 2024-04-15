@@ -1,5 +1,5 @@
 ext {
-    extName = 'Team X'
+    extName = 'TeamX'
     extClass = '.TeamX'
     extVersionCode = 17
     isNsfw = false
