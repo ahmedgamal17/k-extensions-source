@@ -4,10 +4,8 @@ import android.app.Application
 import android.content.SharedPreferences
 import android.widget.Toast
 import androidx.preference.PreferenceScreen
-import eu.kanade.tachiyomi.extension.BuildConfig
 import eu.kanade.tachiyomi.AppInfo
 import eu.kanade.tachiyomi.network.GET
-import eu.kanade.tachiyomi.network.POST
 import eu.kanade.tachiyomi.network.interceptor.rateLimit
 import eu.kanade.tachiyomi.source.ConfigurableSource
 import eu.kanade.tachiyomi.source.model.Filter
@@ -17,7 +15,6 @@ import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.source.online.ParsedHttpSource
 import eu.kanade.tachiyomi.util.asJsoup
-import okhttp3.FormBody
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -27,8 +24,8 @@ import org.jsoup.nodes.Element
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import java.text.SimpleDateFormat
-import java.util.concurrent.TimeUnit
 import java.util.Locale
+import java.util.concurrent.TimeUnit
 
 class TeamX : ParsedHttpSource(), ConfigurableSource {
 
@@ -36,11 +33,9 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
 
     private val defaultBaseUrl = "https://teamxnovel.com"
 
-    //private val BASE_URL_PREF = "overrideBaseUrl_v${AppInfo.getVersionName()}"
+    private val BASE_URL_PREF = "overrideBaseUrl_v${AppInfo.getVersionName()}"
 
-    override val baseUrl by lazy { getPrefBaseUrl() }}
-
-    
+    override val baseUrl by lazy { getPrefBaseUrl() }
 
     override val lang = "ar"
 
@@ -346,7 +341,6 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     companion object {
         private const val RESTART_TACHIYOMI = "Restart Tachiyomi to apply new setting."
         private const val BASE_URL_PREF_TITLE = "Override BaseUrl"
-        private const val BASE_URL_PREF = "overrideBaseUrl_v${BuildConfig.VERSION_CODE}"
         private const val BASE_URL_PREF_SUMMARY = "For temporary uses. Updating the extension will erase this setting."
     }
 }
