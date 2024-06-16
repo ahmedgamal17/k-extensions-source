@@ -1,8 +1,11 @@
 package eu.kanade.tachiyomi.extension.tr.mangagezgini
 
 import eu.kanade.tachiyomi.multisrc.madara.Madara
-import eu.kanade.tachiyomi.source.model.SChapter
-import org.jsoup.nodes.Element
+import eu.kanade.tachiyomi.network.GET
+import eu.kanade.tachiyomi.source.model.Page
+import eu.kanade.tachiyomi.source.model.SManga
+import okhttp3.Request
+import org.jsoup.nodes.Document
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -10,21 +13,26 @@ class MangaGezgini : Madara(
     "MangaGezgini",
     "https://mangagezgini.com",
     "tr",
-    SimpleDateFormat("dd/MM/yyy", Locale("tr")),
+    SimpleDateFormat("MMMM dd, yyyy", Locale("tr")),
 ) {
-    override fun chapterFromElement(element: Element): SChapter {
-        val chapter = SChapter.create()
-        with(element) {
-            selectFirst(chapterUrlSelector)!!.let { urlElement ->
-                chapter.url = urlElement.attr("abs:href").let {
-                    it.substringBefore("?style=paged") + if (!it.endsWith(chapterUrlSuffix)) chapterUrlSuffix else ""
-                }
-                chapter.name = element.select("li.wp-manga-chapter.has-thumb a").text()
-            }
-            chapter.date_upload = selectFirst("img:not(.thumb)")?.attr("alt")?.let { parseRelativeDate(it) }
-                ?: selectFirst("span a")?.attr("title")?.let { parseRelativeDate(it) }
-                ?: parseChapterDate(selectFirst(chapterDateSelector())?.text())
+    override val chapterUrlSelector = "> a"
+
+    override val useLoadMoreRequest = LoadMoreStrategy.Never
+    override val useNewChapterEndpoint = true
+
+    private var captchaUrl: String? = null
+
+    override fun mangaDetailsRequest(manga: SManga): Request =
+        captchaUrl?.let { GET(it, headers) }.also { captchaUrl = null }
+            ?: super.mangaDetailsRequest(manga)
+
+    override fun pageListParse(document: Document): List<Page> {
+        if (document.selectFirst(".reading-content form, .reading-content input[value=Doğrula]") != null) {
+            captchaUrl = document.selectFirst(".reading-content form")
+                ?.attr("abs:action")
+                ?: "$baseUrl/kontrol/"
+            throw Exception("WebView'da captcha çözün.")
         }
-        return chapter
+        return super.pageListParse(document)
     }
 }

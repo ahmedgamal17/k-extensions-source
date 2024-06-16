@@ -1,9 +1,9 @@
 ext {
     extName = 'Tecno Scan'
     extClass = '.TecnoScan'
-    themePkg = 'mangathemesia'
-    baseUrl = 'https://tecnoscann.com'
-    overrideVersionCode = 6
+    themePkg = 'madara'
+    baseUrl = 'https://visortecno.com'
+    overrideVersionCode = 2
     isNsfw = true
 }
 

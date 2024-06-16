@@ -6,10 +6,10 @@ import java.util.Locale
 
 class Hijala : MangaThemesia(
     "Hijala",
-    "https://www.hijala.com",
+    "https://hijala.com",
     "ar",
     dateFormat = SimpleDateFormat("MMMM dd, yyyy", Locale("ar")),
 ) {
-    // Site moved from ZeistManga to MangaThemesia
+    // Site moved from ZeistManga to MangaThemesia again
     override val versionId get() = 2
 }

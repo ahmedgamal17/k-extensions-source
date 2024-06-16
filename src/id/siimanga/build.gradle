@@ -1,0 +1,10 @@
+ext {
+    extName = 'Siikomik'
+    extClass = '.Siikomik'
+    themePkg = 'madara'
+    baseUrl = 'https://siikomik.com'
+    overrideVersionCode = 1
+    isNsfw = false
+}
+
+apply from: "$rootDir/common.gradle"

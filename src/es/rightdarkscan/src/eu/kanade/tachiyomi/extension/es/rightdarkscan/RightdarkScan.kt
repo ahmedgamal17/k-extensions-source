@@ -7,7 +7,7 @@ import java.util.Locale
 
 class RightdarkScan : Madara(
     "Rightdark Scan",
-    "https://rightdark-scan.com",
+    "https://darken-scan.com",
     "es",
     SimpleDateFormat("MMMM dd, yyyy", Locale("es")),
 ) {
@@ -16,4 +16,5 @@ class RightdarkScan : Madara(
         .build()
 
     override val useNewChapterEndpoint = true
+    override val useLoadMoreRequest = LoadMoreStrategy.Always
 }
