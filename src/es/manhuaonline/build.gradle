@@ -1,9 +1,9 @@
 ext {
-    extName = 'Manhua Online'
-    extClass = '.ManhuaOnline'
+    extName = 'SamuraiScan'
+    extClass = '.SamuraiScan'
     themePkg = 'madara'
-    baseUrl = 'https://manhuaonline.org'
-    overrideVersionCode = 1
+    baseUrl = 'https://spanish.visorsmr.com'
+    overrideVersionCode = 4
     isNsfw = false
 }
 

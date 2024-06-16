@@ -1,0 +1,10 @@
+ext {
+    extName = 'TruyenVN'
+    extClass = '.TruyenVN'
+    themePkg = 'madara'
+    baseUrl = 'https://truyenvn.me'
+    overrideVersionCode = 2
+    isNsfw = true
+}
+
+apply from: "$rootDir/common.gradle"

@@ -2,6 +2,7 @@ package eu.kanade.tachiyomi.extension.en.elarcpage
 
 import eu.kanade.tachiyomi.multisrc.mangathemesia.MangaThemesia
 import eu.kanade.tachiyomi.network.GET
+import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.Interceptor
 import okhttp3.Response
 import org.jsoup.Jsoup
@@ -9,7 +10,7 @@ import java.io.IOException
 
 class ElarcPage : MangaThemesia(
     "Elarc Toon",
-    "https://elarctoons.com",
+    "https://elarctoons.ink",
     "en",
 ) {
     override val id = 5482125641807211052
@@ -52,17 +53,21 @@ class ElarcPage : MangaThemesia(
 
         // Always update URL
         val response = chain.proceed(request)
+
+        // Skip responses that do not start with "text/html"
+        if (response.header("content-type")?.startsWith("text/html") != true) {
+            return response
+        }
+
         val document = Jsoup.parse(
             response.peekBody(Long.MAX_VALUE).string(),
             request.url.toString(),
         )
 
-        document.select("#menu-item-14 > a, a:contains(All Series), #main-menu a, .mm a")
-            .reversed()
-            .map { it.attr("href") }
-            .lastOrNull { it.length >= 2 && it[0] == '/' }
+        document.selectFirst(".serieslist > ul > li a.series")
             ?.let {
-                setMangaUrlDirectory(it)
+                val mangaUrlDirectory = it.attr("abs:href").toHttpUrl().pathSegments.first()
+                setMangaUrlDirectory("/$mangaUrlDirectory")
                 dynamicUrlUpdated = timeNow
             }
 

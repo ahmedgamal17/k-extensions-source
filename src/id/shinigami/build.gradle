@@ -2,8 +2,9 @@ ext {
     extName = 'Shinigami'
     extClass = '.Shinigami'
     themePkg = 'madara'
-    baseUrl = 'https://shinigami.cx'
-    overrideVersionCode = 19
+    baseUrl = 'https://shinigamitoon.id'
+    overrideVersionCode = 21
+    isNsfw = false
 }
 
 apply from: "$rootDir/common.gradle"

@@ -2,8 +2,12 @@ ext {
     extName = 'Lura Toon'
     extClass = '.LuraToon'
     themePkg = 'peachscan'
-    baseUrl = 'https://luratoon.com'
-    overrideVersionCode = 39
+    baseUrl = 'https://luratoons.com'
+    overrideVersionCode = 44
 }
 
 apply from: "$rootDir/common.gradle"
+
+dependencies {
+    implementation project(':lib:randomua')
+}

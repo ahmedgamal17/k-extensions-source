@@ -6,7 +6,7 @@ import java.util.Locale
 
 class MangaPro : MangaThemesia(
     "Manga Pro",
-    "https://mangapro.pro",
+    "https://promanga.pro",
     "ar",
     dateFormat = SimpleDateFormat("MMMM dd, yyyy", Locale("ar")),
 ) {

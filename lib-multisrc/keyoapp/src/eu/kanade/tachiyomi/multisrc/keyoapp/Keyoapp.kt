@@ -223,42 +223,38 @@ abstract class Keyoapp(
     // Image list
 
     override fun pageListParse(document: Document): List<Page> {
-        return document.select("#pages > img").map {
-            val index = it.attr("count").toInt()
-            Page(index, document.location(), it.imgAttr("150"))
-        }
+        return document.select("#pages > img")
+            .map { it.imgAttr() }
+            .filter { it.contains(imgCdnRegex) }
+            .mapIndexed { index, img ->
+                Page(index, document.location(), img)
+            }
     }
+
+    private val imgCdnRegex = Regex("""^(https?:)?//cdn\d*\.keyoapp\.com""")
 
     override fun imageUrlParse(document: Document) = ""
 
     // Utilities
 
     // From mangathemesia
-    private fun Element.imgAttr(width: String): String {
+    private fun Element.imgAttr(): String {
         val url = when {
             hasAttr("data-lazy-src") -> attr("abs:data-lazy-src")
             hasAttr("data-src") -> attr("abs:data-src")
             else -> attr("abs:src")
         }
-        return url.toHttpUrl()
-            .newBuilder()
-            .addQueryParameter("w", width)
-            .build()
-            .toString()
+        return url
     }
 
     private fun Element.getImageUrl(selector: String): String? {
-        return this.selectFirst(selector)?.let {
-            it.attr("style")
+        return this.selectFirst(selector)?.let { element ->
+            element.attr("style")
                 .substringAfter(":url(", "")
                 .substringBefore(")", "")
                 .takeIf { it.isNotEmpty() }
-                ?.toHttpUrlOrNull()?.let {
-                    it.newBuilder()
-                        .setQueryParameter("w", "480")
-                        .build()
-                        .toString()
-                }
+                ?.toHttpUrlOrNull()?.newBuilder()?.setQueryParameter("w", "480")?.build()
+                ?.toString()
         }
     }
 
