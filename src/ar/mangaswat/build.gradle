@@ -2,7 +2,7 @@ ext {
     extName = 'MangaSwat'
     extClass = '.MangaSwat'
     themePkg = 'mangathemesia'
-    baseUrl = 'https://normoyun.com'
+    baseUrl = 'https://t1manga.com'
     overrideVersionCode = 19
 }
 
