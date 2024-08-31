@@ -31,7 +31,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
 
     override val name = "TeamX"
 
-    private val defaultBaseUrl = "https://teamxnovel.com"
+    private val defaultBaseUrl = "https://teamoney.site"
 
     private val BASE_URL_PREF = "overrideBaseUrl_v${AppInfo.getVersionName()}"
 
@@ -46,6 +46,10 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
         .readTimeout(30, TimeUnit.SECONDS)
         .rateLimit(10, 1, TimeUnit.SECONDS)
         .build()
+
+    private val preferences: SharedPreferences by lazy {
+        Injekt.get<Application>().getSharedPreferences("source_$id", 0x0000)
+    }
 
     // Popular
 
@@ -209,6 +213,14 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
         return epsStr.filter { it.isDigit() }
     }
 
+    private fun String?.toStatus() = when (this) {
+        "مستمرة" -> SManga.ONGOING
+        "قادم قريبًا" -> SManga.ONGOING // "coming soon"
+        "مكتمل" -> SManga.COMPLETED
+        "متوقف" -> SManga.ON_HIATUS
+        else -> SManga.UNKNOWN
+    }
+
     // Pages
 
     override fun pageListParse(document: Document): List<Page> {
@@ -239,78 +251,90 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     private class GenreFilter(genres: List<Genre>) : Filter.Group<Genre>("Genre", genres)
 
     open fun getGenreFilters(): List<Genre> = listOf(
-        Genre("اكشن", "أكشن"),
+        Genre("", ""),
+        Genre("أكشن", "أكشن"),
         Genre("إثارة", "إثارة"),
         Genre("إيسيكاي", "إيسيكاي"),
-        Genre("إعادة إحياء", "إعادة إحياء"),
-        Genre("اعمار/بناء", "اعمار"),
-        Genre("الحياة اليومية", "الحياة اليومية"),
-        Genre("داخل لعبة", "داخل لعبة"),
         Genre("بطل غير إعتيادي", "بطل غير إعتيادي"),
-        Genre("بوليسي", "بوليسي"),
+        Genre("خيال", "خيال"),
+        Genre("دموي", "دموي"),
+        Genre("نظام", "نظام"),
+        Genre("صقل", "صقل"),
+        Genre("قوة خارقة", "قوة خارقة"),
+        Genre("فنون قتال", "فنون قتال"),
+        Genre("غموض", "غموض"),
+        Genre("وحوش", "وحوش"),
+        Genre("شونين", "شونين"),
+        Genre("حريم", "حريم"),
+        Genre("خيال علمي", "خيال علمي"),
+        Genre("مغامرات", "مغامرات"),
+        Genre("دراما", "دراما"),
+        Genre("خارق للطبيعة", "خارق للطبيعة"),
+        Genre("سحر", "سحر"),
+        Genre("كوميدي", "كوميدي"),
+        Genre("ويب تون", "ويب تون"),
+        Genre("زمكاني", "زمكاني"),
+        Genre("رومانسي", "رومانسي"),
+        Genre("شياطين", "شياطين"),
+        Genre("فانتازيا", "فانتازيا"),
+        Genre("عنف", "عنف"),
+        Genre("ملائكة", "ملائكة"),
+        Genre("بعد الكارثة", "بعد الكارثة"),
+        Genre("إعادة إحياء", "إعادة إحياء"),
+        Genre("اعمار", "اعمار"),
+        Genre("ثأر", "ثأر"),
+        Genre("زنزانات", "زنزانات"),
         Genre("تاريخي", "تاريخي"),
+        Genre("حرب", "حرب"),
+        Genre("خارق", "خارق"),
+        Genre("سنين", "سنين"),
+        Genre("عسكري", "عسكري"),
+        Genre("بوليسي", "بوليسي"),
+        Genre("حياة مدرسية", "حياة مدرسية"),
+        Genre("واقع افتراضي", "واقع افتراضي"),
+        Genre("داخل لعبة", "داخل لعبة"),
+        Genre("داخل رواية", "داخل رواية"),
+        Genre("الحياة اليومية", "الحياة اليومية"),
+        Genre("رعب", "رعب"),
+        Genre("طبخ", "طبخ"),
+        Genre("مدرسي", "مدرسي"),
+        Genre("زومبي", "زومبي"),
+        Genre("شوجو", "شوجو"),
+        Genre("معالج", "معالج"),
+        Genre("شريحة من الحياة", "شريحة من الحياة"),
+        Genre("نفسي", "نفسي"),
         Genre("تاريخ", "تاريخ"),
         Genre("أكاديمية", "أكاديمية"),
         Genre("أرواح", "أرواح"),
-        Genre("ابراج", "ابراج"),
-        Genre("حرب", "حرب"),
         Genre("تراجيدي", "تراجيدي"),
+        Genre("ابراج", "ابراج"),
         Genre("رياضي", "رياضي"),
-        Genre("ثأر", "ثأر"),
-        Genre("زنزانات", "زنزانات"),
-        Genre("حريم", "حريم"),
-        Genre("حياة مدرسية", "حياة مدرسية"),
-        Genre("واقع افتراضي", "واقع افتراضي"),
-        Genre("خارق للطبيعة", "خارق للطبيعة"),
-        Genre("خيال", "خيال"),
-        Genre("خيال علمي", "خيال علمي"),
-        Genre("داخل اللعبة", "143"),
-        Genre("داخل رواية", "داخل رواية"),
-        Genre("دراما", "دراما"),
-        Genre("دموي", "دموي"),
-        Genre("رعب", "رعب"),
-        Genre("رومانسي", "رومانسي"),
-        Genre("زمكاني", "زمكاني"),
-        Genre("زومبي", "زومبي"),
-        Genre("سحر", "سحر"),
-        Genre("سنين", "سنين"),
-        Genre("شريحة من الحياة", "شريحة من الحياة"),
-        Genre("شوجو", "شوجو"),
-        Genre("معالج", "معالج"),
-        Genre("شونين", "شونين"),
-        Genre("شياطين", "شياطين"),
-        Genre("طبخ", "طبخ"),
-        Genre("مدرسي", "مدرسي"),
-        Genre("عسكري", "عسكري"),
-        Genre("عنف", "عنف"),
-        Genre("غموض", "غموض"),
-        Genre("فانتازيا", "فانتازيا"),
-        Genre("فنون قتال", "فنون قتال"),
-        Genre("قوة خارقة", "قوة خارقة"),
-        Genre("خارق", "خارق"),
-        Genre("كوميدي", "كوميدي"),
-        Genre("مغامرات", "مغامرات"),
-        Genre("ملائكة", "ملائكة"),
-        Genre("بعد الكارثة", "بعد الكارثة"),
-        Genre("نظام", "نظام"),
-        Genre("صقل", "صقل"),
-        Genre("نفسي", "نفسي"),
-        Genre("وحوش", "وحوش"),
-        Genre("ويب تون", "ويب تون"),
+        Genre("مصاص دماء", "مصاص دماء"),
+        Genre("طبي", "طبي"),
+        Genre("مأساة", "مأساة"),
+        Genre("إيتشي", "إيتشي"),
+        Genre("انتقام", "انتقام"),
+        Genre("جوسي", "جوسي"),
+        Genre("موريم", "موريم"),
+        Genre("لعبة فيديو", "لعبة فيديو"),
+        Genre("مغني", "مغني"),
     )
 
     open fun getTypeFilter(): List<Type> = listOf(
-        Type("مانجا يابانية", "مانجا ياباني"),
-        Type("مانها صينية", "مانها صيني"),
-        Type("مانها أندونيسية", "مانها أندونيسية"),
-        Type("مانهوا كورية", "مانهوا كورية"),
+        Type("", ""),
+        Type("مانها صيني", "مانها صيني"),
+        Type("مانجا ياباني", "مانجا ياباني"),
         Type("ويب تون انجليزية", "ويب تون انجليزية"),
+        Type("مانهوا كورية", "مانهوا كورية"),
+        Type("ويب تون يابانية", "ويب تون يابانية"),
+        Type("عربي", "عربي"),
     )
 
     open fun getStatusFilters(): List<Status> = listOf(
-        Status("مكتملة", "مكتمل"),
+        Status("", ""),
         Status("مستمرة", "مستمرة"),
-        Status("متوقفة", "متوقف"),
+        Status("متوقف", "متوقف"),
+        Status("مكتمل", "مكتمل"),
         Status("قادم قريبًا", "قادم قريبًا"),
     )
 

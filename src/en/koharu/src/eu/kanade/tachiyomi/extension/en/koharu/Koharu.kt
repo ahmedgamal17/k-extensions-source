@@ -4,8 +4,8 @@ import android.app.Application
 import android.content.SharedPreferences
 import androidx.preference.ListPreference
 import androidx.preference.PreferenceScreen
+import androidx.preference.SwitchPreferenceCompat
 import eu.kanade.tachiyomi.network.GET
-import eu.kanade.tachiyomi.network.POST
 import eu.kanade.tachiyomi.network.interceptor.rateLimit
 import eu.kanade.tachiyomi.source.ConfigurableSource
 import eu.kanade.tachiyomi.source.model.FilterList
@@ -47,11 +47,16 @@ class Koharu : HttpSource(), ConfigurableSource {
 
     private val json: Json by injectLazy()
 
+    private val shortenTitleRegex = Regex("""(\[[^]]*]|[({][^)}]*[)}])""")
+    private fun String.shortenTitle() = replace(shortenTitleRegex, "").trim()
+
     private val preferences: SharedPreferences by lazy {
         Injekt.get<Application>().getSharedPreferences("source_$id", 0x0000)
     }
 
     private fun quality() = preferences.getString(PREF_IMAGERES, "1280")!!
+
+    private fun remadd() = preferences.getBoolean(PREF_REM_ADD, false)
 
     override fun headersBuilder() = super.headersBuilder()
         .add("Referer", "$baseUrl/")
@@ -59,22 +64,47 @@ class Koharu : HttpSource(), ConfigurableSource {
 
     private fun getManga(book: Entry) = SManga.create().apply {
         setUrlWithoutDomain("${book.id}/${book.public_key}")
-        title = book.title
+        title = if (remadd()) book.title.shortenTitle() else book.title
         thumbnail_url = book.thumbnail.path
     }
 
-    private fun getImagesByMangaEntry(entry: MangaEntry): ImagesInfo {
+    private fun getImagesByMangaEntry(entry: MangaEntry): Pair<ImagesInfo, String> {
         val data = entry.data
-        val dataKey = when (quality()) {
-            "1600" -> data.`1600` ?: data.`1280` ?: data.`0`
-            "1280" -> data.`1280` ?: data.`1600` ?: data.`0`
-            "980" -> data.`980` ?: data.`1280` ?: data.`0`
-            "780" -> data.`780` ?: data.`980` ?: data.`0`
-            else -> data.`0`
+        val quality = 0
+        fun getIPK(
+            ori: DataKey?,
+            alt1: DataKey?,
+            alt2: DataKey?,
+            alt3: DataKey?,
+            alt4: DataKey?,
+        ): Pair<Int?, String?> {
+            return Pair(
+                ori?.id ?: alt1?.id ?: alt2?.id ?: alt3?.id ?: alt4?.id,
+                ori?.public_key ?: alt1?.public_key ?: alt2?.public_key ?: alt3?.public_key ?: alt4?.public_key,
+            )
+        }
+        val (id, public_key) = when (quality()) {
+            "1600" -> getIPK(data.`1600`, data.`1280`, data.`0`, data.`980`, data.`780`)
+            "1280" -> getIPK(data.`1280`, data.`1600`, data.`0`, data.`980`, data.`780`)
+            "980" -> getIPK(data.`980`, data.`1280`, data.`0`, data.`1600`, data.`780`)
+            "780" -> getIPK(data.`780`, data.`980`, data.`0`, data.`1280`, data.`1600`)
+            else -> getIPK(data.`0`, data.`1600`, data.`1280`, data.`980`, data.`780`)
         }
 
-        val imagesResponse = client.newCall(POST("$apiBooksUrl/data/${entry.id}/${entry.public_key}/${dataKey.id}/${dataKey.public_key}", headers)).execute()
-        val images = imagesResponse.parseAs<ImagesInfo>()
+        if (id == null || public_key == null) {
+            throw Exception("No Images Found")
+        }
+
+        val realQuality = when (id) {
+            data.`1600`?.id -> "1600"
+            data.`1280`?.id -> "1280"
+            data.`980`?.id -> "980"
+            data.`780`?.id -> "780"
+            else -> "0"
+        }
+
+        val imagesResponse = client.newCall(GET("$apiBooksUrl/data/${entry.id}/${entry.public_key}/$id/$public_key?v=${entry.updated_at ?: entry.created_at}&w=$realQuality", headers)).execute()
+        val images = imagesResponse.parseAs<ImagesInfo>() to realQuality
         return images
     }
 
@@ -85,7 +115,7 @@ class Koharu : HttpSource(), ConfigurableSource {
 
     // Popular
 
-    override fun popularMangaRequest(page: Int) = GET("$apiBooksUrl?sort=6&page=$page", headers)
+    override fun popularMangaRequest(page: Int) = GET("$apiBooksUrl?sort=8&page=$page", headers)
     override fun popularMangaParse(response: Response): MangasPage {
         val data = response.parseAs<Books>()
 
@@ -109,7 +139,7 @@ class Koharu : HttpSource(), ConfigurableSource {
 
     override fun searchMangaRequest(page: Int, query: String, filters: FilterList): Request {
         val url = apiBooksUrl.toHttpUrl().newBuilder().apply {
-            val terms = mutableListOf(query.trim())
+            val terms: MutableList<String> = mutableListOf()
 
             filters.forEach { filter ->
                 when (filter) {
@@ -124,18 +154,9 @@ class Koharu : HttpSource(), ConfigurableSource {
 
                     is TextFilter -> {
                         if (filter.state.isNotEmpty()) {
-                            terms += filter.state.split(",").filter(String::isNotBlank).map { tag ->
-                                val trimmed = tag.trim()
-                                buildString {
-                                    if (trimmed.startsWith('-')) {
-                                        append("-")
-                                    }
-                                    append(filter.type)
-                                    append("!:")
-                                    append("\"")
-                                    append(trimmed.lowercase().removePrefix("-"))
-                                    append("\"")
-                                }
+                            val tags = filter.state.split(",").filter(String::isNotBlank).joinToString(",")
+                            if (tags.isNotBlank()) {
+                                terms += "${filter.type}!:" + '"' + tags + '"'
                             }
                         }
                     }
@@ -159,7 +180,7 @@ class Koharu : HttpSource(), ConfigurableSource {
             listOf(
                 SManga.create().apply {
                     setUrlWithoutDomain("${entry.id}/${entry.public_key}")
-                    title = entry.title
+                    title = if (remadd()) entry.title.shortenTitle() else entry.title
                     thumbnail_url = entry.thumbnails.base + entry.thumbnails.main.path
                 },
             ),
@@ -198,7 +219,7 @@ class Koharu : HttpSource(), ConfigurableSource {
                 4 -> magazines.add(tag.name)
                 5 -> characters.add(tag.name)
                 6 -> cosplayers.add(tag.name)
-                7 -> uploaders.add(tag.name)
+                7 -> tag.name.takeIf { it != "anonymous" }?.let { uploaders.add(it) }
                 8 -> males.add(tag.name + " ♂")
                 9 -> females.add(tag.name + " ♀")
                 10 -> mixed.add(tag.name)
@@ -206,37 +227,59 @@ class Koharu : HttpSource(), ConfigurableSource {
                 else -> tags.add(tag.name)
             }
         }
-        author = (circles.emptyToNull() ?: artists).joinToString()
-        artist = artists.joinToString()
-        genre = (tags + males + females + mixed).joinToString()
+
+        var appended = false
+        fun List<String>.joinAndCapitalizeEach(): String? = this.emptyToNull()?.joinToString { it.capitalizeEach() }?.apply { appended = true }
+        title = if (remadd()) this@toSManga.title.shortenTitle() else this@toSManga.title
+
+        author = (circles.emptyToNull() ?: artists).joinToString { it.capitalizeEach() }
+        artist = artists.joinToString { it.capitalizeEach() }
+        genre = (tags + males + females + mixed).joinToString { it.capitalizeEach() }
         description = buildString {
-            circles.emptyToNull()?.joinToString()?.let {
+            circles.joinAndCapitalizeEach()?.let {
                 append("Circles: ", it, "\n")
             }
-            uploaders.emptyToNull()?.joinToString()?.let {
+            uploaders.joinAndCapitalizeEach()?.let {
                 append("Uploaders: ", it, "\n")
             }
-            magazines.emptyToNull()?.joinToString()?.let {
+            magazines.joinAndCapitalizeEach()?.let {
                 append("Magazines: ", it, "\n")
             }
-            cosplayers.emptyToNull()?.joinToString()?.let {
+            cosplayers.joinAndCapitalizeEach()?.let {
                 append("Cosplayers: ", it, "\n")
             }
-            parodies.emptyToNull()?.joinToString()?.let {
+            parodies.joinAndCapitalizeEach()?.let {
                 append("Parodies: ", it, "\n")
             }
-            characters.emptyToNull()?.joinToString()?.let {
+            characters.joinAndCapitalizeEach()?.let {
                 append("Characters: ", it, "\n")
             }
-            append("Pages: ", thumbnails.entries.size, "\n\n")
+
+            if (appended) append("\n")
 
             try {
-                append("Added: ", dateReformat.format(((updated_at ?: created_at))), "\n")
+                append("Posted: ", dateReformat.format(created_at), "\n")
             } catch (_: Exception) {}
+
+            val dataKey = when (quality()) {
+                "1600" -> data.`1600` ?: data.`1280` ?: data.`0`
+                "1280" -> data.`1280` ?: data.`1600` ?: data.`0`
+                "980" -> data.`980` ?: data.`1280` ?: data.`0`
+                "780" -> data.`780` ?: data.`980` ?: data.`0`
+                else -> data.`0`
+            }
+            append("Size: ", dataKey.readableSize(), "\n\n")
+            append("Pages: ", thumbnails.entries.size, "\n\n")
         }
         status = SManga.COMPLETED
         update_strategy = UpdateStrategy.ONLY_FETCH_ONCE
         initialized = true
+    }
+
+    private fun String.capitalizeEach() = this.split(" ").joinToString(" ") { s ->
+        s.replaceFirstChar { sr ->
+            if (sr.isLowerCase()) sr.titlecase(Locale.getDefault()) else sr.toString()
+        }
     }
 
     private fun <T> Collection<T>.emptyToNull(): Collection<T>? {
@@ -274,8 +317,8 @@ class Koharu : HttpSource(), ConfigurableSource {
         val mangaEntry = response.parseAs<MangaEntry>()
         val imagesInfo = getImagesByMangaEntry(mangaEntry)
 
-        return imagesInfo.entries.mapIndexed { index, image ->
-            Page(index, imageUrl = "${imagesInfo.base}/${image.path}")
+        return imagesInfo.first.entries.mapIndexed { index, image ->
+            Page(index, imageUrl = "${imagesInfo.first.base}/${image.path}?w=${imagesInfo.second}")
         }
     }
 
@@ -292,6 +335,14 @@ class Koharu : HttpSource(), ConfigurableSource {
             summary = "%s"
             setDefaultValue("1280")
         }.also(screen::addPreference)
+
+        SwitchPreferenceCompat(screen.context).apply {
+            key = PREF_REM_ADD
+            title = "Remove additional information in title"
+            summary = "Remove anything in brackets from manga titles.\n" +
+                "Reload manga to apply changes to loaded manga."
+            setDefaultValue(false)
+        }.also(screen::addPreference)
     }
 
     private inline fun <reified T> Response.parseAs(): T {
@@ -301,5 +352,6 @@ class Koharu : HttpSource(), ConfigurableSource {
     companion object {
         const val PREFIX_ID_KEY_SEARCH = "id:"
         private const val PREF_IMAGERES = "pref_image_quality"
+        private const val PREF_REM_ADD = "pref_remove_additional"
     }
 }
