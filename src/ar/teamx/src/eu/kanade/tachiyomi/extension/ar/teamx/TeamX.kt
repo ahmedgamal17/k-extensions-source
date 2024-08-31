@@ -47,10 +47,6 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
         .rateLimit(10, 1, TimeUnit.SECONDS)
         .build()
 
-    private val preferences: SharedPreferences by lazy {
-        Injekt.get<Application>().getSharedPreferences("source_$id", 0x0000)
-    }
-
     // Popular
 
     override fun popularMangaRequest(page: Int): Request {
@@ -166,6 +162,8 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
                 when {
                     statusText.contains("مستمرة", true) -> status = SManga.ONGOING
                     statusText.contains("مكتملة", true) -> status = SManga.COMPLETED
+                    statusText.contains("قادم قريبًا", true) -> status = SManga.ONGOING
+                    statusText.contains("متوقف", true) -> status = SManga.ON_HIATUS
                     else -> status = SManga.UNKNOWN
                 }
             }
@@ -211,14 +209,6 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
 
     private fun getNumberFromEpsString(epsStr: String): String {
         return epsStr.filter { it.isDigit() }
-    }
-
-    private fun String?.toStatus() = when (this) {
-        "مستمرة" -> SManga.ONGOING
-        "قادم قريبًا" -> SManga.ONGOING // "coming soon"
-        "مكتمل" -> SManga.COMPLETED
-        "متوقف" -> SManga.ON_HIATUS
-        else -> SManga.UNKNOWN
     }
 
     // Pages
