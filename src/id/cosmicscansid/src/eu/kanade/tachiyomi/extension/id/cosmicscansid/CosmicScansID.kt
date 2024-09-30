@@ -8,9 +8,10 @@ import eu.kanade.tachiyomi.source.model.FilterList
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import org.jsoup.select.Elements
 import java.util.concurrent.TimeUnit
 
-class CosmicScansID : MangaThemesia("CosmicScans.id", "https://cosmicscans.id", "id", "/semua-komik") {
+class CosmicScansID : MangaThemesia("CosmicScans.id", "https://cosmic1.co", "id", "/semua-komik") {
 
     override val client: OkHttpClient = super.client.newBuilder()
         .rateLimit(20, 4, TimeUnit.SECONDS)
@@ -55,6 +56,7 @@ class CosmicScansID : MangaThemesia("CosmicScans.id", "https://cosmicscans.id", 
 
     // manga details
     override val seriesDescriptionSelector = ".entry-content[itemprop=description] :not(a,p:has(a))"
+    override fun Elements.imgAttr(): String = this.first()?.imgAttr() ?: ""
 
     // pages
     override val pageSelector = "div#readerarea img:not(noscript img)"

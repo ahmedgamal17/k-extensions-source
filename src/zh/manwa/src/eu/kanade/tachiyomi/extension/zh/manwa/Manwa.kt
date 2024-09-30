@@ -3,6 +3,7 @@ package eu.kanade.tachiyomi.extension.zh.manwa
 import android.app.Application
 import android.content.SharedPreferences
 import android.net.Uri
+import android.util.Base64
 import androidx.preference.CheckBoxPreference
 import androidx.preference.ListPreference
 import androidx.preference.PreferenceScreen
@@ -42,10 +43,10 @@ class Manwa : ParsedHttpSource(), ConfigurableSource {
     override val name: String = "漫蛙"
     override val lang: String = "zh"
     override val supportsLatest: Boolean = true
-    override val baseUrl = "https://manwa.fun"
     private val json: Json by injectLazy()
     private val preferences: SharedPreferences =
         Injekt.get<Application>().getSharedPreferences("source_$id", 0x0000)
+    override val baseUrl = "https://" + MIRROR_ENTRIES.run { this[preferences.getString(MIRROR_KEY, "0")!!.toInt().coerceAtMost(size)] }
 
     private val rewriteOctetStream: Interceptor = Interceptor { chain ->
         val originalResponse: Response = chain.proceed(chain.request())
@@ -159,28 +160,33 @@ class Manwa : ParsedHttpSource(), ConfigurableSource {
         return GET("$baseUrl${chapter.url}?img_host=${preferences.getString(IMAGE_HOST_KEY, IMAGE_HOST_ENTRY_VALUES[0])}", headers)
     }
 
-    override fun pageListParse(document: Document): List<Page> = mutableListOf<Page>().apply {
-        val cssQuery = "#cp_img > div.img-content > img[data-r-src]"
-        val elements = document.select(cssQuery)
-        if (elements.size == 3) {
-            val darkReader = document.selectFirst("#cp_img p")
-            if (darkReader != null) {
-                if (preferences.getBoolean(AUTO_CLEAR_COOKIE_KEY, false)) {
-                    clearCookies()
-                }
-
-                throw Exception(darkReader.text())
-            }
-        }
-
-        elements.forEachIndexed { index, it ->
-            add(Page(index, "", it.attr("data-r-src")))
+    override fun pageListParse(document: Document): List<Page> {
+        val script = document.selectFirst("script:containsData(encryptedPhotos)")!!.data()
+        // key changes every hour
+        val key = script.substringBefore("','enc'").substringAfterLast("'").toByteArray()
+        val encrypted = script.substringAfter("encryptedPhotos = '").substringBefore("'")
+        val decoded = Base64.decode(encrypted, Base64.DEFAULT)
+        val aesKey = SecretKeySpec(key, "AES")
+        val cipher = Cipher.getInstance("AES/CBC/PKCS5Padding")
+        cipher.init(Cipher.DECRYPT_MODE, aesKey, IvParameterSpec(key))
+        val decrypted = String(cipher.doFinal(decoded))
+        val jsonArray = json.parseToJsonElement(decrypted).jsonArray
+        return jsonArray.mapIndexed { index, it ->
+            Page(index, imageUrl = "${it.jsonObject["img_url"]!!.jsonPrimitive.content}?v=20220724")
         }
     }
 
     override fun imageUrlParse(document: Document): String = throw UnsupportedOperationException()
 
     override fun setupPreferenceScreen(screen: PreferenceScreen) {
+        ListPreference(screen.context).apply {
+            key = MIRROR_KEY
+            title = "使用镜像网址"
+            entries = MIRROR_ENTRIES
+            entryValues = Array(entries.size, Int::toString)
+            setDefaultValue("0")
+        }.let { screen.addPreference(it) }
+
         ListPreference(screen.context).apply {
             key = IMAGE_HOST_KEY
             title = "图源"
@@ -210,6 +216,8 @@ class Manwa : ParsedHttpSource(), ConfigurableSource {
     }
 
     companion object {
+        private const val MIRROR_KEY = "MIRROR"
+        private val MIRROR_ENTRIES get() = arrayOf("manwa.fun", "manwa.me", "manwav3.xyz", "manwasa.cc", "manwadf.cc")
         private const val IMAGE_HOST_KEY = "IMG_HOST"
         private val IMAGE_HOST_ENTRIES = arrayOf("图源1", "图源2", "图源3")
         private val IMAGE_HOST_ENTRY_VALUES = arrayOf("1", "2", "3")
