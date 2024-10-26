@@ -3,7 +3,7 @@ ext {
     extClass = '.Scans4u'
     themePkg = 'keyoapp'
     baseUrl = 'https://4uscans.com'
-    overrideVersionCode = 0
+    overrideVersionCode = 1
     isNsfw = false
 }
 
