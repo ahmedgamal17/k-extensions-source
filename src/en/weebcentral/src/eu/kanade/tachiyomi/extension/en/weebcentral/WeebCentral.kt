@@ -8,6 +8,7 @@ import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
 import eu.kanade.tachiyomi.source.online.ParsedHttpSource
 import okhttp3.HttpUrl.Companion.toHttpUrl
+import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.Request
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
@@ -149,6 +150,23 @@ class WeebCentral : ParsedHttpSource() {
         }
     }
     // =============================== Pages ================================
+
+    override fun pageListRequest(chapter: SChapter): Request {
+        val newUrl = (baseUrl + chapter.url)
+            .toHttpUrlOrNull()
+            ?.newBuilder()
+            ?.addPathSegment("images")
+            ?.addQueryParameter("is_prev", "False")
+            ?.addQueryParameter("reading_style", "long_strip")
+            ?.build()
+            ?.toString()
+            ?: (baseUrl + chapter.url)
+        return GET(newUrl, headers)
+    }
+
+    override fun getChapterUrl(chapter: SChapter): String {
+        return baseUrl + chapter.url
+    }
 
     override fun pageListParse(document: Document): List<Page> {
         return document.select("section[x-data~=scroll] > img").mapIndexed { index, element ->
