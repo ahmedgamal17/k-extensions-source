@@ -25,6 +25,7 @@ import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import java.text.SimpleDateFormat
 import java.util.Locale
+import java.util.concurrent.TimeUnit
 
 class TruyenGG : ParsedHttpSource(), ConfigurableSource {
 
@@ -39,7 +40,7 @@ class TruyenGG : ParsedHttpSource(), ConfigurableSource {
     override val baseUrl by lazy { getPrefBaseUrl() }
 
     override val client: OkHttpClient = network.cloudflareClient.newBuilder()
-        .rateLimit(1)
+        .rateLimit(1, 2, TimeUnit.SECONDS)
         .build()
 
     override fun headersBuilder(): Headers.Builder =
@@ -81,7 +82,7 @@ class TruyenGG : ParsedHttpSource(), ConfigurableSource {
 
     override fun mangaDetailsParse(document: Document): SManga = SManga.create().apply {
         title = document.select("h1[itemprop=name]").text()
-        author = document.select("p:contains(Tác Giả) + p").joinToString { it.text() }
+        author = document.selectFirst("p:contains(Tác Giả) + p")?.text()
         genre = document.select("a.clblue").joinToString { it.text() }
         description = document.select("div.story-detail-info").text().trim()
         thumbnail_url = document.selectFirst(".thumbblock img")!!.attr("abs:src")
