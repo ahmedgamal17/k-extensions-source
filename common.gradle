@@ -110,28 +110,17 @@ tasks.register("writeManifestFile") {
     doLast {
         def manifest = android.sourceSets.getByName("main").manifest
         if (!manifest.srcFile.exists()) {
-            // Create the build directory first
-            def buildDir = layout.buildDirectory.get().asFile
-            buildDir.mkdirs()
+            File tempFile = layout.buildDirectory.get().file("tempAndroidManifest.xml").getAsFile()
+            // Create parent directories if missing
+            tempFile.parentFile.mkdirs()
             
-            // Create nested temp directory
-            File tempDir = new File(buildDir, "temp")
-            tempDir.mkdirs()
-            
-            File tempFile = new File(tempDir, "tempAndroidManifest.xml")
-            if (!tempFile.exists()) {
-                tempFile.withWriter { writer ->
-                    writer.write('''<?xml version="1.0" encoding="utf-8"?>
-<manifest 
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="eu.kanade.tachiyomi.extension.placeholder" />''')
-                }
+            tempFile.withWriter { 
+                it.write('<?xml version="1.0" encoding="utf-8"?>\n<manifest />\n') 
             }
-            manifest.srcFile(tempFile.absolutePath)
+            manifest.srcFile(tempFile.path)
         }
     }
 }
-
 
 preBuild.dependsOn(writeManifestFile, lintKotlin)
 if (System.getenv("CI") != "true") {
