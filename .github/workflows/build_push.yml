@@ -7,8 +7,6 @@ on:
     paths:
       - '**'
       - '!**.md'
-      - '!.github/**'
-      - '.github/scripts/**'
 
 concurrency:
   group: ${{ github.workflow }}
@@ -138,4 +136,5 @@ jobs:
         run: |
           cd repo
           python ../main/.github/scripts/merge-repo.py '${{ needs.prepare.outputs.delete }}'
+          chmod +x ../main/.github/scripts/commit-repo.sh
           ../main/.github/scripts/commit-repo.sh
