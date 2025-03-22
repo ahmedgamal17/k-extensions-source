@@ -1,7 +1,0 @@
-ext {
-    extName = 'Reaper Scans (unoriginal)'
-    extClass = '.ReaperScansUnoriginal'
-    extVersionCode = 31
-}
-
-apply from: "$rootDir/common.gradle"

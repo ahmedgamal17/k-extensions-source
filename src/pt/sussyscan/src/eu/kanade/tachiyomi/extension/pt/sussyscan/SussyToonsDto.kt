@@ -24,23 +24,25 @@ class MangaDto(
     @SerialName("obr_id")
     val id: Int,
     @SerialName("obr_descricao")
-    val description: String,
+    val description: String?,
     @SerialName("obr_imagem")
-    val thumbnail: String,
+    val thumbnail: String?,
     @SerialName("obr_nome")
     val name: String,
     @SerialName("obr_slug")
     val slug: String?,
     @SerialName("status")
     val status: MangaStatus,
+    @SerialName("scan_id")
+    val scanId: Int,
 ) {
     @Serializable
     class MangaStatus(
         @SerialName("stt_nome")
-        val value: String,
+        val value: String?,
     ) {
         fun toStatus(): Int {
-            return when (value.lowercase()) {
+            return when (value?.lowercase()) {
                 "em andamento" -> SManga.ONGOING
                 "completo" -> SManga.COMPLETED
                 "hiato" -> SManga.ON_HIATUS
@@ -72,9 +74,25 @@ class WrapperChapterDto(
 class ChapterPageDto(
     @SerialName("cap_paginas")
     val pages: List<PageDto>,
-)
+    @SerialName("obra")
+    val manga: MangaReferenceDto,
+    @SerialName("cap_numero")
+    val chapterNumber: Int,
+) {
+    @Serializable
+    class MangaReferenceDto(
+        @SerialName("obr_id")
+        val id: Int,
+        @SerialName("scan_id")
+        val scanId: Int,
+    )
+}
 
 @Serializable
 class PageDto(
     val src: String,
-)
+    @SerialName("numero")
+    val number: Int? = null,
+) {
+    fun isWordPressContent(): Boolean = number == null
+}
