@@ -133,7 +133,9 @@ class ManhwaWeb : HttpSource() {
 
     override fun chapterListParse(response: Response): List<SChapter> {
         val result = json.decodeFromString<PayloadChapterDto>(response.body.string())
-        val chapters = result.chapters.filterNot { it.espUrl == null && it.rawUrl == null }.map { it.toSChapter() }
+        val chapters = result.chapters.filterNot {
+            it.createdAt == null || (it.espUrl == null && it.rawUrl == null)
+        }.map { it.toSChapter() }
 
         return chapters.sortedByDescending { it.chapter_number }
     }
@@ -153,7 +155,7 @@ class ManhwaWeb : HttpSource() {
 
     override fun pageListParse(response: Response): List<Page> {
         val result = json.decodeFromString<PayloadPageDto>(response.body.string())
-        return result.data.images.filter { it.isNotBlank() }
+        return result.data.images.filter { it.startsWith("http") }
             .mapIndexed { i, img -> Page(i, imageUrl = img) }
     }
 

@@ -212,8 +212,8 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     // Pages
 
     override fun pageListParse(document: Document): List<Page> {
-        return document.select("div.reading-content div.page-break img[src*=uploads]").mapIndexed { i, img ->
-            Page(i, "", img.attr("abs:src"))
+        return document.select("div.image_list canvas[data-src]").mapIndexed { i, img ->
+            Page(i, "", img.absUrl("data-src"))
         }
     }
 
@@ -349,7 +349,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     private fun getPrefBaseUrl(): String = preferences.getString(BASE_URL_PREF, defaultBaseUrl)!!
 
     companion object {
-        private const val RESTART_APP = ".لتطبيق الإعدادات الجديدة أعد تشغيل التطبيق"
+        private const val RESTART_TACHIYOMI = ".لتطبيق الإعدادات الجديدة أعد تشغيل التطبيق"
         private const val BASE_URL_PREF_TITLE = "تعديل رابط الموقع"
         private const val BASE_URL_PREF_SUMMARY = ".للاستخدام المؤقت. تحديث التطبيق سيؤدي الى حذف الإعدادات"
     }
