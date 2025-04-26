@@ -8008,10 +8008,10 @@
   {
     "name": "Tachiyomi: TeamX",
     "pkg": "eu.kanade.tachiyomi.extension.ar.teamx",
-    "apk": "tachiyomi-ar.teamx-v1.4.21.apk",
+    "apk": "tachiyomi-ar.teamx-v1.4.22.apk",
     "lang": "ar",
-    "code": 21,
-    "version": "1.4.21",
+    "code": 22,
+    "version": "1.4.22",
     "nsfw": 0,
     "sources": [
       {
