@@ -8008,10 +8008,10 @@
   {
     "name": "Tachiyomi: TeamX",
     "pkg": "eu.kanade.tachiyomi.extension.ar.teamx",
-    "apk": "tachiyomi-ar.teamx-v1.4.22.apk",
+    "apk": "tachiyomi-ar.teamx-v1.4.23.apk",
     "lang": "ar",
-    "code": 22,
-    "version": "1.4.22",
+    "code": 23,
+    "version": "1.4.23",
     "nsfw": 0,
     "sources": [
       {
@@ -22902,19 +22902,19 @@
         "name": "늑대닷컴 - 웹툰",
         "lang": "ko",
         "id": "5583626852311652499",
-        "baseUrl": "https://wfwf386.com"
+        "baseUrl": "https://wfwf391.com"
       },
       {
         "name": "늑대닷컴 - 만화책",
         "lang": "ko",
         "id": "7074060458114951398",
-        "baseUrl": "https://wfwf386.com"
+        "baseUrl": "https://wfwf391.com"
       },
       {
         "name": "늑대닷컴 - 포토툰",
         "lang": "ko",
         "id": "4225505094399546613",
-        "baseUrl": "https://wfwf386.com"
+        "baseUrl": "https://wfwf391.com"
       }
     ]
   },
@@ -29986,7 +29986,7 @@
         "name": "zero搬运网",
         "lang": "zh",
         "id": "8743284448117690086",
-        "baseUrl": "http://www.zerobywrar.com"
+        "baseUrl": "http://www.zerobywtar.com"
       }
     ]
   }
