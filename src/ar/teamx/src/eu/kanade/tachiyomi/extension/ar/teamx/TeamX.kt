@@ -191,7 +191,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     override fun chapterFromElement(element: Element): SChapter {
         return SChapter.create().apply {
             setUrlWithoutDomain(element.attr("href"))
-            name = element.select("div.epl-title").text()
+            name = element.select("div.epl-num").text() + " : " + element.select("div.epl-title").text()
             date_upload = element.select("div.epl-date").first()!!.text()?.let { parseChapterDate(it) } ?: 0
             val epNum = getNumberFromEpsString(element.select("div.epl-num").text())
             chapter_number = when {
