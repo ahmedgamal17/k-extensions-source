@@ -1,7 +1,0 @@
-ext {
-    extName = 'Crystal Comics'
-    extClass = '.CrystalComics'
-    extVersionCode = 39
-}
-
-apply from: "$rootDir/common.gradle"

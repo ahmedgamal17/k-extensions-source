@@ -85,6 +85,9 @@ abstract class MangaBox(
 
     private fun useAltCdnInterceptor(chain: Interceptor.Chain): Response {
         val request = chain.request()
+        if (cdnSet.isEmpty()) {
+            return chain.proceed(request)
+        }
         val requestTag = request.tag(MangaBoxFallBackTag::class.java)
         val originalResponse: Response? = try {
             chain.proceed(request)
@@ -152,7 +155,7 @@ abstract class MangaBox(
 
     open val simpleQueryPath = "search/story/"
 
-    override fun popularMangaSelector() = "div.truyen-list > div.list-truyen-item-wrap"
+    override fun popularMangaSelector() = "div.truyen-list > div.list-truyen-item-wrap, div.comic-list > .list-comic-item-wrap"
 
     override fun popularMangaRequest(page: Int): Request {
         return GET("$baseUrl/$popularUrlPath$page", headers)
@@ -208,7 +211,7 @@ abstract class MangaBox(
         }
     }
 
-    override fun searchMangaSelector() = ".panel_story_list .story_item, div.list-truyen-item-wrap"
+    override fun searchMangaSelector() = ".panel_story_list .story_item, div.list-truyen-item-wrap, div.list-comic-item-wrap"
 
     override fun searchMangaFromElement(element: Element) = mangaFromElement(element)
 
@@ -346,11 +349,10 @@ abstract class MangaBox(
     }
 
     override fun pageListParse(document: Document): List<Page> {
-        val element = document.select("head > script").lastOrNull()
-            ?: return emptyList()
+        val content = document.select("script:containsData(cdns =)").joinToString("\n") { it.data() }
         val cdns =
-            extractArray(element.html(), "cdns") + extractArray(element.html(), "backupImage")
-        val chapterImages = extractArray(element.html(), "chapterImages")
+            extractArray(content, "cdns") + extractArray(content, "backupImage")
+        val chapterImages = extractArray(content, "chapterImages")
 
         // Add all parsed cdns to set
         cdnSet.addAll(cdns)
@@ -369,6 +371,10 @@ abstract class MangaBox(
             }
 
             Page(i, document.location(), parsedUrl)
+        }.ifEmpty {
+            document.select("div.container-chapter-reader > img").mapIndexed { i, img ->
+                Page(i, imageUrl = img.absUrl("src"))
+            }
         }
     }
 

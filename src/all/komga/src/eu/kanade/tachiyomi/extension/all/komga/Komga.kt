@@ -76,6 +76,8 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
 
     private val password by lazy { preferences.getString(PREF_PASSWORD, "")!! }
 
+    private val apiKey by lazy { preferences.getString(PREF_API_KEY, "")!! }
+
     private val defaultLibraries
         get() = preferences.getStringSet(PREF_DEFAULT_LIBRARIES, emptySet())!!
 
@@ -83,12 +85,17 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
 
     override fun headersBuilder() = super.headersBuilder()
         .set("User-Agent", "TachiyomiKomga/${AppInfo.getVersionName()}")
+        .also { builder ->
+            if (apiKey.isNotBlank()) {
+                builder.set("X-API-Key", apiKey)
+            }
+        }
 
     override val client: OkHttpClient =
         network.cloudflareClient.newBuilder()
             .authenticator { _, response ->
-                if (response.request.header("Authorization") != null) {
-                    null // Give up, we've already failed to authenticate.
+                if (apiKey.isNotBlank() || response.request.header("Authorization") != null) {
+                    null // Give up if API key is set or we've already failed to authenticate.
                 } else {
                     response.request.newBuilder()
                         .addHeader("Authorization", Credentials.basic(username, password))
@@ -134,7 +141,12 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
             else -> "series"
         }
 
-        val url = "$baseUrl/api/v1/$type?search=$query&page=${page - 1}&deleted=false".toHttpUrl().newBuilder()
+        val url = "$baseUrl/api/v1".toHttpUrl().newBuilder()
+            .addPathSegments(type)
+            .addQueryParameter("search", query)
+            .addQueryParameter("page", (page - 1).toString())
+            .addQueryParameter("deleted", "false")
+
         val filterList = filters.ifEmpty { getFilterList() }
         val defaultLibraries = defaultLibraries
 
@@ -183,7 +195,7 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
 
     override fun getMangaUrl(manga: SManga) = manga.url.replace("/api/v1", "")
 
-    override fun mangaDetailsRequest(manga: SManga) = GET(manga.url)
+    override fun mangaDetailsRequest(manga: SManga) = GET(manga.url, headers)
 
     override fun mangaDetailsParse(response: Response): SManga {
         return if (response.isFromReadList()) {
@@ -254,7 +266,7 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
             .sortedByDescending { it.chapter_number }
     }
 
-    override fun pageListRequest(chapter: SChapter) = GET("${chapter.url}/pages")
+    override fun pageListRequest(chapter: SChapter) = GET("${chapter.url}/pages", headers)
 
     override fun pageListParse(response: Response): List<Page> {
         val pages = response.parseAs<List<PageDto>>()
@@ -372,21 +384,33 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
             key = PREF_ADDRESS,
             restartRequired = true,
         )
+        // API key preference (takes precedence over username/password)
         screen.addEditTextPreference(
-            title = "Username",
+            title = "API key",
             default = "",
-            summary = username.ifBlank { "The user account email" },
-            key = PREF_USERNAME,
-            restartRequired = true,
-        )
-        screen.addEditTextPreference(
-            title = "Password",
-            default = "",
-            summary = if (password.isBlank()) "The user account password" else "*".repeat(password.length),
+            summary = if (apiKey.isBlank()) "Optional: Use an API key for authentication" else "*".repeat(apiKey.length),
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD,
-            key = PREF_PASSWORD,
+            key = PREF_API_KEY,
             restartRequired = true,
         )
+        // Only show username/password if API key is not set
+        if (apiKey.isBlank()) {
+            screen.addEditTextPreference(
+                title = "Username",
+                default = "",
+                summary = username.ifBlank { "The user account email" },
+                key = PREF_USERNAME,
+                restartRequired = true,
+            )
+            screen.addEditTextPreference(
+                title = "Password",
+                default = "",
+                summary = if (password.isBlank()) "The user account password" else "*".repeat(password.length),
+                inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD,
+                key = PREF_PASSWORD,
+                restartRequired = true,
+            )
+        }
 
         MultiSelectListPreference(screen.context).apply {
             key = PREF_DEFAULT_LIBRARIES
@@ -467,17 +491,17 @@ open class Komga(private val suffix: String = "") : ConfigurableSource, Unmetere
 
         scope.launch {
             try {
-                libraries = client.newCall(GET("$baseUrl/api/v1/libraries")).await().parseAs()
+                libraries = client.newCall(GET("$baseUrl/api/v1/libraries", headers)).await().parseAs()
                 collections = client
-                    .newCall(GET("$baseUrl/api/v1/collections?unpaged=true"))
+                    .newCall(GET("$baseUrl/api/v1/collections?unpaged=true", headers))
                     .await()
                     .parseAs<PageWrapperDto<CollectionDto>>()
                     .content
-                genres = client.newCall(GET("$baseUrl/api/v1/genres")).await().parseAs()
-                tags = client.newCall(GET("$baseUrl/api/v1/tags")).await().parseAs()
-                publishers = client.newCall(GET("$baseUrl/api/v1/publishers")).await().parseAs()
+                genres = client.newCall(GET("$baseUrl/api/v1/genres", headers)).await().parseAs()
+                tags = client.newCall(GET("$baseUrl/api/v1/tags", headers)).await().parseAs()
+                publishers = client.newCall(GET("$baseUrl/api/v1/publishers", headers)).await().parseAs()
                 authors = client
-                    .newCall(GET("$baseUrl/api/v1/authors"))
+                    .newCall(GET("$baseUrl/api/v1/authors", headers))
                     .await()
                     .parseAs<List<AuthorDto>>()
                     .groupBy { it.role }
@@ -524,6 +548,7 @@ private const val PREF_DISPLAY_NAME = "Source display name"
 private const val PREF_ADDRESS = "Address"
 private const val PREF_USERNAME = "Username"
 private const val PREF_PASSWORD = "Password"
+private const val PREF_API_KEY = "API key"
 private const val PREF_DEFAULT_LIBRARIES = "Default libraries"
 private const val PREF_CHAPTER_NAME_TEMPLATE = "Chapter name template"
 private const val PREF_CHAPTER_NAME_TEMPLATE_DEFAULT = "{number} - {title} ({size})"
