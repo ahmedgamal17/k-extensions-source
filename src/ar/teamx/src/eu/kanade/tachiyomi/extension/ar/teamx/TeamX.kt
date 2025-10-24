@@ -190,7 +190,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     override fun chapterFromElement(element: Element): SChapter {
         return SChapter.create().apply {
             setUrlWithoutDomain(element.attr("href"))
-            name = element.select("div.epl-title").text()
+            name = element.select("div.epl-num").text() + " : " + element.select("div.epl-title").text()
             date_upload = element.select("div.epl-date").first()!!.text()?.let { parseChapterDate(it) } ?: 0
             val epNum = getNumberFromEpsString(element.select("div.epl-num").text())
             chapter_number = when {
@@ -345,7 +345,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
             dialogTitle = BASE_URL_PREF_TITLE
 
             setOnPreferenceChangeListener { _, _ ->
-                Toast.makeText(screen.context, RESTART_TACHIYOMI, Toast.LENGTH_LONG).show()
+                Toast.makeText(screen.context, RESTART_APP, Toast.LENGTH_LONG).show()
                 true
             }
         }
@@ -355,7 +355,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     private fun getPrefBaseUrl(): String = preferences.getString(BASE_URL_PREF, defaultBaseUrl)!!
 
     companion object {
-        private const val RESTART_TACHIYOMI = ".لتطبيق الإعدادات الجديدة أعد تشغيل التطبيق"
+        private const val RESTART_APP = ".لتطبيق الإعدادات الجديدة أعد تشغيل التطبيق"
         private const val BASE_URL_PREF_TITLE = "تعديل رابط الموقع"
         private const val BASE_URL_PREF_SUMMARY = ".للاستخدام المؤقت. تحديث التطبيق سيؤدي الى حذف الإعدادات"
     }
