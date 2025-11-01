@@ -172,7 +172,7 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
 
     override fun chapterListSelector() = "div.chapter-card > a"
 
-    private fun chapterNextPageSelector() = "a[rel=next]" //"ul.pagination li:last-child a"
+    private fun chapterNextPageSelector() = "a[rel=next]" // "ul.pagination li:last-child a"
 
     override fun chapterListParse(response: Response): List<SChapter> {
         val chapters = mutableListOf<SChapter>()
