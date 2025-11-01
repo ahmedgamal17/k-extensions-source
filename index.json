@@ -1787,10 +1787,10 @@
   {
     "name": "Tachiyomi: Cubari",
     "pkg": "eu.kanade.tachiyomi.extension.all.cubari",
-    "apk": "tachiyomi-all.cubari-v1.4.25.apk",
+    "apk": "tachiyomi-all.cubari-v1.4.26.apk",
     "lang": "all",
-    "code": 25,
-    "version": "1.4.25",
+    "code": 26,
+    "version": "1.4.26",
     "nsfw": 0,
     "sources": [
       {
@@ -4236,6 +4236,311 @@
     ]
   },
   {
+    "name": "Tachiyomi: Manga Ball",
+    "pkg": "eu.kanade.tachiyomi.extension.all.mangaball",
+    "apk": "tachiyomi-all.mangaball-v1.4.1.apk",
+    "lang": "all",
+    "code": 1,
+    "version": "1.4.1",
+    "nsfw": 1,
+    "sources": [
+      {
+        "name": "Manga Ball",
+        "lang": "ar",
+        "id": "5763592680824441822",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "bg",
+        "id": "8745608410209813897",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "bn",
+        "id": "215476983335793342",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ca",
+        "id": "9084885867242726177",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "cs",
+        "id": "7169636154814402936",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "da",
+        "id": "3523848676838462162",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "de",
+        "id": "1966498126669070992",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "el",
+        "id": "5586454452949519981",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "en",
+        "id": "1448906013733277368",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "es",
+        "id": "2111498029521981284",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "fa",
+        "id": "5041529786391483797",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "fi",
+        "id": "5403969342368317365",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "fr",
+        "id": "4804845656972446863",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "he",
+        "id": "2439898977058946574",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "hi",
+        "id": "3325308670866777803",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "hu",
+        "id": "34408487862399605",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "id",
+        "id": "2825403839562372201",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "it",
+        "id": "3556430745170330371",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "is",
+        "id": "7073775592097997189",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ja",
+        "id": "3534664804437641640",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ko",
+        "id": "6595061459576629533",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "kn",
+        "id": "8772354233322170397",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ml",
+        "id": "4574102257618973368",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ms",
+        "id": "8221555371810647857",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ne",
+        "id": "615885128031081811",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "nl",
+        "id": "5484157652338210397",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "no",
+        "id": "3777339391626194173",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "pl",
+        "id": "5768573366655393544",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "pt-BR",
+        "id": "35546023386335815",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ro",
+        "id": "3357030332736127152",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ru",
+        "id": "7203647082681930008",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "sk",
+        "id": "8131533018433339643",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "sl",
+        "id": "1966275254426034210",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "sq",
+        "id": "7985165645382797194",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "sr",
+        "id": "4654428466578189678",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "sv",
+        "id": "4940984854904039527",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "ta",
+        "id": "1133911619191823359",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "th",
+        "id": "6778483817278233868",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "tr",
+        "id": "8648105733020574748",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "uk",
+        "id": "6193642890428176406",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "vi",
+        "id": "117702463567484484",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      },
+      {
+        "name": "Manga Ball",
+        "lang": "zh",
+        "id": "1555837267200004397",
+        "baseUrl": "https://mangaball.net",
+        "versionId": 1
+      }
+    ]
+  },
+  {
     "name": "Tachiyomi: MangaCrazy",
     "pkg": "eu.kanade.tachiyomi.extension.all.mangacrazy",
     "apk": "tachiyomi-all.mangacrazy-v1.4.45.apk",
@@ -4694,10 +4999,10 @@
   {
     "name": "Tachiyomi: MangaFire",
     "pkg": "eu.kanade.tachiyomi.extension.all.mangafire",
-    "apk": "tachiyomi-all.mangafire-v1.4.14.apk",
+    "apk": "tachiyomi-all.mangafire-v1.4.15.apk",
     "lang": "all",
-    "code": 14,
-    "version": "1.4.14",
+    "code": 15,
+    "version": "1.4.15",
     "nsfw": 1,
     "sources": [
       {
@@ -9429,10 +9734,10 @@
   {
     "name": "Tachiyomi: TeamX",
     "pkg": "eu.kanade.tachiyomi.extension.ar.teamx",
-    "apk": "tachiyomi-ar.teamx-v1.4.25.apk",
+    "apk": "tachiyomi-ar.teamx-v1.4.26.apk",
     "lang": "ar",
-    "code": 25,
-    "version": "1.4.25",
+    "code": 26,
+    "version": "1.4.26",
     "nsfw": 0,
     "sources": [
       {
@@ -10084,10 +10389,10 @@
   {
     "name": "Tachiyomi: Atsumaru",
     "pkg": "eu.kanade.tachiyomi.extension.en.atsumaru",
-    "apk": "tachiyomi-en.atsumaru-v1.4.5.apk",
+    "apk": "tachiyomi-en.atsumaru-v1.4.6.apk",
     "lang": "en",
-    "code": 5,
-    "version": "1.4.5",
+    "code": 6,
+    "version": "1.4.6",
     "nsfw": 1,
     "sources": [
       {
@@ -10972,10 +11277,10 @@
   {
     "name": "Tachiyomi: Dynasty",
     "pkg": "eu.kanade.tachiyomi.extension.en.dynasty",
-    "apk": "tachiyomi-en.dynasty-v1.4.27.apk",
+    "apk": "tachiyomi-en.dynasty-v1.4.28.apk",
     "lang": "en",
-    "code": 27,
-    "version": "1.4.27",
+    "code": 28,
+    "version": "1.4.28",
     "nsfw": 1,
     "sources": [
       {
@@ -11374,10 +11679,10 @@
   {
     "name": "Tachiyomi: Flame Comics",
     "pkg": "eu.kanade.tachiyomi.extension.en.flamecomics",
-    "apk": "tachiyomi-en.flamecomics-v1.4.44.apk",
+    "apk": "tachiyomi-en.flamecomics-v1.4.45.apk",
     "lang": "en",
-    "code": 44,
-    "version": "1.4.44",
+    "code": 45,
+    "version": "1.4.45",
     "nsfw": 0,
     "sources": [
       {
@@ -12356,10 +12661,10 @@
   {
     "name": "Tachiyomi: Kagane",
     "pkg": "eu.kanade.tachiyomi.extension.en.kagane",
-    "apk": "tachiyomi-en.kagane-v1.4.6.apk",
+    "apk": "tachiyomi-en.kagane-v1.4.8.apk",
     "lang": "en",
-    "code": 6,
-    "version": "1.4.6",
+    "code": 8,
+    "version": "1.4.8",
     "nsfw": 1,
     "sources": [
       {
@@ -14520,10 +14825,10 @@
   {
     "name": "Tachiyomi: MangaTaro",
     "pkg": "eu.kanade.tachiyomi.extension.en.mangataro",
-    "apk": "tachiyomi-en.mangataro-v1.4.1.apk",
+    "apk": "tachiyomi-en.mangataro-v1.4.5.apk",
     "lang": "en",
-    "code": 1,
-    "version": "1.4.1",
+    "code": 5,
+    "version": "1.4.5",
     "nsfw": 0,
     "sources": [
       {
@@ -19012,10 +19317,10 @@
   {
     "name": "Tachiyomi: YakshaComics",
     "pkg": "eu.kanade.tachiyomi.extension.en.yakshacomics",
-    "apk": "tachiyomi-en.yakshacomics-v1.4.45.apk",
+    "apk": "tachiyomi-en.yakshacomics-v1.4.46.apk",
     "lang": "en",
-    "code": 45,
-    "version": "1.4.45",
+    "code": 46,
+    "version": "1.4.46",
     "nsfw": 0,
     "sources": [
       {
@@ -19901,17 +20206,17 @@
   {
     "name": "Tachiyomi: Emperor Scan",
     "pkg": "eu.kanade.tachiyomi.extension.es.emperorscan",
-    "apk": "tachiyomi-es.emperorscan-v1.4.52.apk",
+    "apk": "tachiyomi-es.emperorscan-v1.4.53.apk",
     "lang": "es",
-    "code": 52,
-    "version": "1.4.52",
+    "code": 53,
+    "version": "1.4.53",
     "nsfw": 0,
     "sources": [
       {
         "name": "Emperor Scan",
         "lang": "es",
         "id": "4562754350961964148",
-        "baseUrl": "https://zonaemperor.com",
+        "baseUrl": "https://emperorscan.mundoalterno.org",
         "versionId": 1
       }
     ]
@@ -20132,17 +20437,17 @@
   {
     "name": "Tachiyomi: Ikigai Mangas",
     "pkg": "eu.kanade.tachiyomi.extension.es.ikigaimangas",
-    "apk": "tachiyomi-es.ikigaimangas-v1.4.27.apk",
+    "apk": "tachiyomi-es.ikigaimangas-v1.4.28.apk",
     "lang": "es",
-    "code": 27,
-    "version": "1.4.27",
+    "code": 28,
+    "version": "1.4.28",
     "nsfw": 1,
     "sources": [
       {
         "name": "Ikigai Mangas",
         "lang": "es",
         "id": "3546919326830738510",
-        "baseUrl": "https://visualikigai.tutorialesminecraft.com",
+        "baseUrl": "https://visorikigai.damilok.xyz",
         "versionId": 1
       }
     ]
@@ -20613,10 +20918,10 @@
   {
     "name": "Tachiyomi: Manga Crab",
     "pkg": "eu.kanade.tachiyomi.extension.es.mangacrab",
-    "apk": "tachiyomi-es.mangacrab-v1.4.61.apk",
+    "apk": "tachiyomi-es.mangacrab-v1.4.62.apk",
     "lang": "es",
-    "code": 61,
-    "version": "1.4.61",
+    "code": 62,
+    "version": "1.4.62",
     "nsfw": 0,
     "sources": [
       {
@@ -20984,17 +21289,17 @@
   {
     "name": "Tachiyomi: MHScans",
     "pkg": "eu.kanade.tachiyomi.extension.es.mhscans",
-    "apk": "tachiyomi-es.mhscans-v1.4.52.apk",
+    "apk": "tachiyomi-es.mhscans-v1.4.53.apk",
     "lang": "es",
-    "code": 52,
-    "version": "1.4.52",
+    "code": 53,
+    "version": "1.4.53",
     "nsfw": 0,
     "sources": [
       {
         "name": "MHScans",
         "lang": "es",
         "id": "3253304651550496369",
-        "baseUrl": "https://mh.topmanhuas.net",
+        "baseUrl": "https://curiosidadtop.com",
         "versionId": 1
       }
     ]
@@ -21881,14 +22186,14 @@
   {
     "name": "Tachiyomi: BigSolo",
     "pkg": "eu.kanade.tachiyomi.extension.fr.bigsolo",
-    "apk": "tachiyomi-fr.bigsolo-v1.4.2.apk",
+    "apk": "tachiyomi-fr.bigsolo-v1.4.3.apk",
     "lang": "fr",
-    "code": 2,
-    "version": "1.4.2",
+    "code": 3,
+    "version": "1.4.3",
     "nsfw": 0,
     "sources": [
       {
-        "name": "Big Solo",
+        "name": "BigSolo",
         "lang": "fr",
         "id": "4410528266393104437",
         "baseUrl": "https://bigsolo.org",
@@ -22325,6 +22630,24 @@
     ]
   },
   {
+    "name": "Tachiyomi: Manga-Corporation",
+    "pkg": "eu.kanade.tachiyomi.extension.fr.mangacorporation",
+    "apk": "tachiyomi-fr.mangacorporation-v1.4.4.apk",
+    "lang": "fr",
+    "code": 4,
+    "version": "1.4.4",
+    "nsfw": 0,
+    "sources": [
+      {
+        "name": "Manga-Corporation",
+        "lang": "fr",
+        "id": "1528177119657303302",
+        "baseUrl": "https://manga-corporation.com",
+        "versionId": 1
+      }
+    ]
+  },
+  {
     "name": "Tachiyomi: MangaHub.fr",
     "pkg": "eu.kanade.tachiyomi.extension.fr.mangahubfr",
     "apk": "tachiyomi-fr.mangahubfr-v1.4.47.apk",
@@ -22356,6 +22679,24 @@
         "lang": "fr",
         "id": "1384625280015637699",
         "baseUrl": "https://www.mangakawaii.io",
+        "versionId": 1
+      }
+    ]
+  },
+  {
+    "name": "Tachiyomi: MangaNova",
+    "pkg": "eu.kanade.tachiyomi.extension.fr.manganova",
+    "apk": "tachiyomi-fr.manganova-v1.4.1.apk",
+    "lang": "fr",
+    "code": 1,
+    "version": "1.4.1",
+    "nsfw": 0,
+    "sources": [
+      {
+        "name": "MangaNova",
+        "lang": "fr",
+        "id": "514127183927359583",
+        "baseUrl": "https://www.manga-nova.com",
         "versionId": 1
       }
     ]
@@ -22607,6 +22948,24 @@
         "lang": "fr",
         "id": "2062108502806113139",
         "baseUrl": "https://m.scan-manga.com",
+        "versionId": 1
+      }
+    ]
+  },
+  {
+    "name": "Tachiyomi: ScanR",
+    "pkg": "eu.kanade.tachiyomi.extension.fr.scanr",
+    "apk": "tachiyomi-fr.scanr-v1.4.1.apk",
+    "lang": "fr",
+    "code": 1,
+    "version": "1.4.1",
+    "nsfw": 1,
+    "sources": [
+      {
+        "name": "ScanR",
+        "lang": "fr",
+        "id": "5710047468564158686",
+        "baseUrl": "https://teamscanr.fr",
         "versionId": 1
       }
     ]
@@ -23180,10 +23539,10 @@
   {
     "name": "Tachiyomi: Kiryuu",
     "pkg": "eu.kanade.tachiyomi.extension.id.kiryuu",
-    "apk": "tachiyomi-id.kiryuu-v1.4.42.apk",
+    "apk": "tachiyomi-id.kiryuu-v1.4.43.apk",
     "lang": "id",
-    "code": 42,
-    "version": "1.4.42",
+    "code": 43,
+    "version": "1.4.43",
     "nsfw": 0,
     "sources": [
       {
@@ -25217,6 +25576,24 @@
     ]
   },
   {
+    "name": "Tachiyomi: Gangan Online",
+    "pkg": "eu.kanade.tachiyomi.extension.ja.ganganonline",
+    "apk": "tachiyomi-ja.ganganonline-v1.4.1.apk",
+    "lang": "ja",
+    "code": 1,
+    "version": "1.4.1",
+    "nsfw": 0,
+    "sources": [
+      {
+        "name": "Gangan Online",
+        "lang": "ja",
+        "id": "1467355738916791140",
+        "baseUrl": "https://www.ganganonline.com",
+        "versionId": 1
+      }
+    ]
+  },
+  {
     "name": "Tachiyomi: GANMA!",
     "pkg": "eu.kanade.tachiyomi.extension.ja.ganma",
     "apk": "tachiyomi-ja.ganma-v1.4.3.apk",
@@ -25399,18 +25776,18 @@
   {
     "name": "Tachiyomi: Magazine Pocket",
     "pkg": "eu.kanade.tachiyomi.extension.ja.magazinepocket",
-    "apk": "tachiyomi-ja.magazinepocket-v1.4.8.apk",
+    "apk": "tachiyomi-ja.magazinepocket-v1.4.9.apk",
     "lang": "ja",
-    "code": 8,
-    "version": "1.4.8",
+    "code": 9,
+    "version": "1.4.9",
     "nsfw": 0,
     "sources": [
       {
         "name": "Magazine Pocket",
         "lang": "ja",
-        "id": "6622145914196228080",
+        "id": "583369548372015159",
         "baseUrl": "https://pocket.shonenmagazine.com",
-        "versionId": 1
+        "versionId": 2
       }
     ]
   },
@@ -25525,10 +25902,10 @@
   {
     "name": "Tachiyomi: NihonKuni",
     "pkg": "eu.kanade.tachiyomi.extension.ja.mangagun",
-    "apk": "tachiyomi-ja.mangagun-v1.4.15.apk",
+    "apk": "tachiyomi-ja.mangagun-v1.4.16.apk",
     "lang": "ja",
-    "code": 15,
-    "version": "1.4.15",
+    "code": 16,
+    "version": "1.4.16",
     "nsfw": 1,
     "sources": [
       {
@@ -25899,18 +26276,18 @@
   {
     "name": "Tachiyomi: Rawkuma",
     "pkg": "eu.kanade.tachiyomi.extension.ja.rawkuma",
-    "apk": "tachiyomi-ja.rawkuma-v1.4.33.apk",
+    "apk": "tachiyomi-ja.rawkuma-v1.4.35.apk",
     "lang": "ja",
-    "code": 33,
-    "version": "1.4.33",
+    "code": 35,
+    "version": "1.4.35",
     "nsfw": 1,
     "sources": [
       {
         "name": "Rawkuma",
         "lang": "ja",
-        "id": "1512072040307511188",
-        "baseUrl": "https://old.rawkuma.net",
-        "versionId": 1
+        "id": "5746834068092446709",
+        "baseUrl": "https://rawkuma.net",
+        "versionId": 2
       }
     ]
   },
@@ -26323,14 +26700,14 @@
         "name": "ManaToki",
         "lang": "ko",
         "id": "2526381983439079467",
-        "baseUrl": "https://manatoki468.net",
+        "baseUrl": "https://manatoki469.net",
         "versionId": 1
       },
       {
         "name": "NewToki",
         "lang": "ko",
         "id": "1977818283770282459",
-        "baseUrl": "https://newtoki468.com",
+        "baseUrl": "https://newtoki469.com",
         "versionId": 1
       }
     ]
@@ -26402,21 +26779,21 @@
         "name": "늑대닷컴 - 웹툰",
         "lang": "ko",
         "id": "5583626852311652499",
-        "baseUrl": "https://wfwf443.com",
+        "baseUrl": "https://wfwf444.com",
         "versionId": 1
       },
       {
         "name": "늑대닷컴 - 만화책",
         "lang": "ko",
         "id": "7074060458114951398",
-        "baseUrl": "https://wfwf443.com",
+        "baseUrl": "https://wfwf444.com",
         "versionId": 1
       },
       {
         "name": "늑대닷컴 - 포토툰",
         "lang": "ko",
         "id": "4225505094399546613",
-        "baseUrl": "https://wfwf443.com",
+        "baseUrl": "https://wfwf444.com",
         "versionId": 1
       }
     ]
@@ -33056,6 +33433,24 @@
         "id": "5818973680777851987",
         "baseUrl": "https://manhuarock4.site",
         "versionId": 2
+      }
+    ]
+  },
+  {
+    "name": "Tachiyomi: MeHentai",
+    "pkg": "eu.kanade.tachiyomi.extension.vi.mehentai",
+    "apk": "tachiyomi-vi.mehentai-v1.4.4.apk",
+    "lang": "vi",
+    "code": 4,
+    "version": "1.4.4",
+    "nsfw": 1,
+    "sources": [
+      {
+        "name": "MeHentai",
+        "lang": "vi",
+        "id": "1503074002208879050",
+        "baseUrl": "https://mehentai.tv",
+        "versionId": 1
       }
     ]
   },
