@@ -170,9 +170,9 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
 
     // Chapters
 
-    override fun chapterListSelector() = "div.eplisterfull > ul > li > a"
+    override fun chapterListSelector() = "div.chapter-card > a"
 
-    private fun chapterNextPageSelector() = "ul.pagination li:last-child a" // "a[rel=next]"
+    private fun chapterNextPageSelector() = "a[rel=next]" //"ul.pagination li:last-child a"
 
     override fun chapterListParse(response: Response): List<SChapter> {
         val chapters = mutableListOf<SChapter>()
@@ -191,9 +191,9 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     override fun chapterFromElement(element: Element): SChapter {
         return SChapter.create().apply {
             setUrlWithoutDomain(element.attr("href"))
-            name = element.select("div.epl-num").text() + " : " + element.select("div.epl-title").text()
-            date_upload = element.select("div.epl-date").first()!!.text()?.let { parseChapterDate(it) } ?: 0
-            val epNum = getNumberFromEpsString(element.select("div.epl-num").text())
+            name = element.select("div.chapter-info chapter-number").text() + " : " + element.select("div.chapter-info div.chapter-title").text()
+            date_upload = element.select("div.chapter-info div.chapter-date").first()!!.text()?.let { parseChapterDate(it) } ?: 0
+            val epNum = getNumberFromEpsString(element.select("div.chapter-info chapter-number").text())
             chapter_number = when {
                 (epNum.isNotEmpty()) -> epNum.toFloat()
                 else -> 1F
