@@ -22,6 +22,7 @@ import okhttp3.Response
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import java.text.SimpleDateFormat
+import java.util.Calendar
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 
@@ -170,18 +171,24 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
 
     // Chapters
 
-    override fun chapterListSelector() = "div.chapter-card > a"
+    override fun chapterListSelector() = "div.chapter-card a"
 
     private fun chapterNextPageSelector() = "a[rel=next]" // "ul.pagination li:last-child a"
 
     override fun chapterListParse(response: Response): List<SChapter> {
         val chapters = mutableListOf<SChapter>()
 
-        // Chapter list may be paginated, get recursively
         fun addChapters(document: Document) {
-            document.select(chapterListSelector()).map { chapters.add(chapterFromElement(it)) }
-            document.select("${chapterNextPageSelector()}").firstOrNull()
-                ?.let { addChapters(client.newCall(GET(it.attr("href"))).execute().asJsoup()) }
+            // إضافة الفصول من الصفحة الحالية
+            val chapterElements = document.select(chapterListSelector())
+            chapters.addAll(chapterElements.map { chapterFromElement(it) })
+
+            // محاولة إيجاد رابط الصفحة التالية والاستدعاء التكراري في حال وجوده
+            val nextPageElement = document.selectFirst(chapterNextPageSelector())
+            nextPageElement?.attr("href")?.let { nextUrl ->
+                val nextResponse = client.newCall(GET(nextUrl)).execute()
+                addChapters(nextResponse.asJsoup())
+            }
         }
 
         addChapters(response.asJsoup())
@@ -191,9 +198,9 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
     override fun chapterFromElement(element: Element): SChapter {
         return SChapter.create().apply {
             setUrlWithoutDomain(element.attr("href"))
-            name = element.select("div.chapter-info chapter-number").text() + " : " + element.select("div.chapter-info div.chapter-title").text()
-            date_upload = element.select("div.chapter-info div.chapter-date").first()!!.text()?.let { parseChapterDate(it) } ?: 0
-            val epNum = getNumberFromEpsString(element.select("div.chapter-info chapter-number").text())
+            name = element.select("div.chapter-info div.chapter-number").text() + " : " + element.select("div.chapter-info div.chapter-title").text()
+            date_upload = element.select("div.chapter-info div.chapter-date").text()?.let { parseChapterDate(it) } ?: 0
+            val epNum = getNumberFromEpsString(element.select("div.chapter-info div.chapter-number").text())
             chapter_number = when {
                 (epNum.isNotEmpty()) -> epNum.toFloat()
                 else -> 1F
@@ -201,8 +208,52 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
         }
     }
 
+    private val chapterFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.getDefault())
+
     private fun parseChapterDate(date: String): Long {
-        return SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.getDefault()).parse(date)?.time ?: 0L
+        return runCatching {
+            // Try parsing standard date format first
+            chapterFormat.parse(date)?.time
+        }.getOrNull() ?: runCatching {
+            // Handle relative date formats like "1 week ago", "54 minutes ago", etc.
+            parseRelativeDate(date)
+        }.getOrNull() ?: 0
+    }
+
+    private fun parseRelativeDate(date: String): Long {
+        val normalizedDate = date.lowercase().trim()
+
+        // Extract number and unit
+        val number = normalizedDate.split(" ").firstOrNull { it.toIntOrNull() != null }?.toIntOrNull() ?: return 0
+        val calendar = Calendar.getInstance()
+
+        return when {
+            normalizedDate.contains("minute") || normalizedDate.contains("min") -> {
+                calendar.add(Calendar.MINUTE, -number)
+                calendar.timeInMillis
+            }
+            normalizedDate.contains("hour") || normalizedDate.contains("hr") -> {
+                calendar.add(Calendar.HOUR_OF_DAY, -number)
+                calendar.timeInMillis
+            }
+            normalizedDate.contains("day") -> {
+                calendar.add(Calendar.DAY_OF_MONTH, -number)
+                calendar.timeInMillis
+            }
+            normalizedDate.contains("week") -> {
+                calendar.add(Calendar.WEEK_OF_YEAR, -number)
+                calendar.timeInMillis
+            }
+            normalizedDate.contains("month") -> {
+                calendar.add(Calendar.MONTH, -number)
+                calendar.timeInMillis
+            }
+            normalizedDate.contains("year") -> {
+                calendar.add(Calendar.YEAR, -number)
+                calendar.timeInMillis
+            }
+            else -> 0
+        }
     }
 
     private fun getNumberFromEpsString(epsStr: String): String {
