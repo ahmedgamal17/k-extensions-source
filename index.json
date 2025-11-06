@@ -9734,10 +9734,10 @@
   {
     "name": "Tachiyomi: TeamX",
     "pkg": "eu.kanade.tachiyomi.extension.ar.teamx",
-    "apk": "tachiyomi-ar.teamx-v1.4.26.apk",
+    "apk": "tachiyomi-ar.teamx-v1.4.27.apk",
     "lang": "ar",
-    "code": 26,
-    "version": "1.4.26",
+    "code": 27,
+    "version": "1.4.27",
     "nsfw": 0,
     "sources": [
       {
@@ -26779,21 +26779,21 @@
         "name": "늑대닷컴 - 웹툰",
         "lang": "ko",
         "id": "5583626852311652499",
-        "baseUrl": "https://wfwf444.com",
+        "baseUrl": "https://wfwf445.com",
         "versionId": 1
       },
       {
         "name": "늑대닷컴 - 만화책",
         "lang": "ko",
         "id": "7074060458114951398",
-        "baseUrl": "https://wfwf444.com",
+        "baseUrl": "https://wfwf445.com",
         "versionId": 1
       },
       {
         "name": "늑대닷컴 - 포토툰",
         "lang": "ko",
         "id": "4225505094399546613",
-        "baseUrl": "https://wfwf444.com",
+        "baseUrl": "https://wfwf445.com",
         "versionId": 1
       }
     ]
