@@ -102,8 +102,8 @@ class Series(
     val author: List<String>?,
     val artist: List<String>?,
     val status: String,
-    val series_id: Int,
-    val last_edit: String,
+    val series_id: Int?,
+    val last_edit: Long,
     val views: Int?,
 )
 
