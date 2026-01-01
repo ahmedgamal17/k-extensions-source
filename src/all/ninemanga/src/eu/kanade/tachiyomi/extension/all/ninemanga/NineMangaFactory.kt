@@ -7,7 +7,10 @@ import eu.kanade.tachiyomi.source.model.FilterList
 import eu.kanade.tachiyomi.source.model.Page
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
+import eu.kanade.tachiyomi.util.asJsoup
 import keiyoushi.utils.parseAs
+import okhttp3.HttpUrl.Companion.toHttpUrl
+import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import okhttp3.Request
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
@@ -28,7 +31,7 @@ class NineMangaFactory : SourceFactory {
     )
 }
 
-class NineMangaEn : NineManga("NineMangaEn", "https://ninemanga.com", "en") {
+class NineMangaEn : NineManga("NineMangaEn", "https://www.ninemanga.com", "en") {
     override fun latestUpdatesFromElement(element: Element) = SManga.create().apply {
         element.select("a.bookname").let {
             url = it.attr("abs:href").substringAfter("ninemanga.com")
@@ -59,10 +62,44 @@ class NineMangaEs : NineManga("NineMangaEs", "https://es.ninemanga.com", "es") {
     }
 
     private val imgRegex = Regex("""all_imgs_url\s*:\s*\[\s*([^]]*)\s*,\s*]""")
+    private val redirectRegex = Regex("""window\.location\.href\s*=\s*["'](.*?)["']""")
 
     override fun pageListParse(document: Document): List<Page> {
+        val serverUrl = document.selectFirst("section.section div.post-content-body > a")?.absUrl("href")
+
+        if (serverUrl != null) {
+            val serverHeaders = headers.newBuilder()
+                .set("Referer", document.baseUri())
+                .build()
+            return pageListParse(client.newCall(GET(serverUrl, serverHeaders)).execute().asJsoup())
+        }
+
+        val redirectScript = document.selectFirst("body > script:containsData(window.location.href)")?.data()
+
+        if (redirectScript != null) {
+            val documentLocation = document.location()
+            val redirectUrl = redirectRegex.find(redirectScript)
+                ?.groupValues?.get(1)
+                ?.let { path ->
+                    path.toHttpUrlOrNull()
+                        ?: documentLocation.toHttpUrl().newBuilder()
+                            .encodedPath(path)
+                            .build()
+                } ?: return super.pageListParse(document)
+
+            val headers = headers.newBuilder()
+                .set("Referer", documentLocation)
+                .build()
+
+            val redirectedDocument = client.newCall(
+                GET(redirectUrl, headers),
+            ).execute().asJsoup()
+
+            return pageListParse(redirectedDocument)
+        }
+
         val script = document.selectFirst("script:containsData(all_imgs_url)")?.data()
-            ?: throw Exception("Image data not found")
+            ?: return super.pageListParse(document)
 
         val images = imgRegex.find(script)?.groupValues?.get(1)
             ?.let { "[$it]".parseAs<List<String>>() }
