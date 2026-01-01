@@ -125,16 +125,28 @@ class TeamX : ParsedHttpSource(), ConfigurableSource {
         }
     }
 
-    override fun searchMangaSelector() = "div.bs > div.bsx, li.list-group-item"
+    override fun searchMangaSelector() = "div.bs > div.bsx, a.items-center"
 
     override fun searchMangaFromElement(element: Element): SManga {
-        return SManga.create().apply {
+        val currentUrl = element.ownerDocument()?.location() ?: ""
+        val isSearch = currentUrl.contains("/ajax/search")
+    
+        return if (isSearch) {
+            // Handle search results
+            SManga.create().apply {
+                title = element.selectFirst("h4")!!.text()
+                thumbnail_url = element.selectFirst("img")?.absUrl("src")
+                setUrlWithoutDomain(element.absUrl("href"))
+            }
+        } else {
+            SManga.create().apply {
             element.select("a").let {
                 setUrlWithoutDomain(it.attr("abs:href"))
                 title = it.attr("href").substringAfterLast("/").replace("-", " ")
             }
 
             thumbnail_url = element.select("img").attr("abs:src")
+            }
         }
     }
 
