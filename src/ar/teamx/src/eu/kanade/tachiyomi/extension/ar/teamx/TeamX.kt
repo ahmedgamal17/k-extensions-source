@@ -198,7 +198,7 @@ abstract class TeamX : KeiSource() {
             SChapter.create().apply {
                 val chpNumText = element.select("div.chapter-info div.chapter-number").text()
                 val chpTitle = element.select("div.chapter-info div.chapter-title").text()
-                
+
                 name = "$chpNumText : $chpTitle"
 
                 val epNum = getNumberFromEpsString(chpNumText)
@@ -273,7 +273,5 @@ abstract class TeamX : KeiSource() {
         else -> SManga.UNKNOWN
     }
 
-    private fun getNumberFromEpsString(epsStr: String): String {
-        return epsStr.filter { it.isDigit() }
-    }
+    private fun getNumberFromEpsString(epsStr: String): String = epsStr.filter { it.isDigit() }
 }
