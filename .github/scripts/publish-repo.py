@@ -19,9 +19,11 @@ REPO_JAR_DIR = REPO_DIR / "jar"
 REPO_APK_DIR.mkdir(parents=True, exist_ok=True)
 REPO_JAR_DIR.mkdir(parents=True, exist_ok=True)
 
-APK_BASE_URL = "https://cdn.jsdelivr.net/gh/keiyoushi/extensions@repo/apk"
-JAR_BASE_URL = "https://raw.githubusercontent.com/keiyoushi/extensions/repo/jar"
-ICON_BASE_URL = "https://cdn.jsdelivr.net/gh/keiyoushi/extensions-source@main"
+import os
+repo = os.environ.get("GITHUB_REPOSITORY", "keiyoushi/extensions-source")
+APK_BASE_URL = f"https://raw.githubusercontent.com/{repo}/repo/apk"
+JAR_BASE_URL = f"https://raw.githubusercontent.com/{repo}/repo/jar"
+ICON_BASE_URL = f"https://raw.githubusercontent.com/{repo}/main"
 
 to_delete: list[str] = json.loads(sys.argv[1])
 
