@@ -20,7 +20,7 @@ REPO_APK_DIR.mkdir(parents=True, exist_ok=True)
 REPO_JAR_DIR.mkdir(parents=True, exist_ok=True)
 
 import os
-repo = os.environ.get("GITHUB_REPOSITORY", "keiyoushi/extensions-source")
+repo = "ahmedgamal17/k-extensions-source"
 APK_BASE_URL = f"https://raw.githubusercontent.com/{repo}/repo/apk"
 JAR_BASE_URL = f"https://raw.githubusercontent.com/{repo}/repo/jar"
 ICON_BASE_URL = f"https://raw.githubusercontent.com/{repo}/main"
