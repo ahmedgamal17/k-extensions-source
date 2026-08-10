@@ -194,16 +194,15 @@ abstract class TeamX : KeiSource() {
         return document.select("div.chapter-card").mapNotNull { element ->
             if (element.selectFirst("span.locked") != null) return@mapNotNull null
             SChapter.create().apply {
-                val chpNum = element.attr("data-number")
-                val chpTitle = element.selectFirst("div.chapter-info div.chapter-title")?.text()
-                val invalidTitles = setOf(chpNum, "الفصل $chpNum", "الفصل رقم $chpNum")
+                val chpNumText = element.select("div.chapter-info div.chapter-number").text()
+                val chpTitle = element.select("div.chapter-info div.chapter-title").text()
+                
+                name = "$chpNumText : $chpTitle"
 
-                name = buildString {
-                    append("الفصل $chpNum")
-                    if (!chpTitle.isNullOrEmpty() && chpTitle !in invalidTitles) {
-                        append(" - $chpTitle")
-                    }
-                    append("\u200F")
+                val epNum = getNumberFromEpsString(chpNumText)
+                chapter_number = when {
+                    (epNum.isNotEmpty()) -> epNum.toFloat()
+                    else -> 1F
                 }
 
                 // data-date is Unix timestamp (seconds)
@@ -270,5 +269,9 @@ abstract class TeamX : KeiSource() {
         "مكتمل" -> SManga.COMPLETED
         "متوقف" -> SManga.ON_HIATUS
         else -> SManga.UNKNOWN
+    }
+
+    private fun getNumberFromEpsString(epsStr: String): String {
+        return epsStr.filter { it.isDigit() }
     }
 }
