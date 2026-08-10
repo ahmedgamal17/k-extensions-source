@@ -131,7 +131,7 @@ def get_module_list(ref: str) -> tuple[list[str], list[str]]:
     multisrcs = set()
     libs = set()
     deleted = set()
-    core_files_changed = False
+    core_files_changed = os.getenv("BUILD_ALL") == "true"
 
     for file in map(lambda x: Path(x).as_posix(), changed_files):
         if CORE_FILES_REGEX.search(file):
