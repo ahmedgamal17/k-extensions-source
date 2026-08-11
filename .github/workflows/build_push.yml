@@ -18,7 +18,8 @@ on:
         default: false
         type: boolean
 
-permissions: {}
+permissions:
+  contents: write
 
 concurrency:
   group: ${{ github.workflow }}
