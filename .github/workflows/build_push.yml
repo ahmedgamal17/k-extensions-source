@@ -18,6 +18,10 @@ on:
         description: Rebuild and republish every extension instead of only what changed since the last successful run
         type: boolean
         default: false
+      build_all:
+        description: Build all extensions
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -52,7 +56,7 @@ jobs:
         name: Get last successful CI commit
         env:
           GH_TOKEN: ${{ github.token }}
-          FULL_REBUILD: ${{ inputs.full_rebuild }}
+          FULL_REBUILD: ${{ inputs.full_rebuild || inputs.build_all }}
         run: |
           # Empty tree: every module is diffed as new, so everything gets rebuilt
           empty_tree=$(git hash-object -t tree /dev/null)
@@ -70,6 +74,7 @@ jobs:
         name: Create output matrices
         env:
           BASE_SHA: ${{ steps.base.outputs.sha }}
+          BUILD_ALL: ${{ inputs.full_rebuild || inputs.build_all }}
         run: |
           python ./.github/scripts/generate-build-matrices.py "$BASE_SHA"
 
@@ -206,7 +211,6 @@ jobs:
         env:
           DELETE: ${{ needs.prepare.outputs.delete }}
           FULL_REBUILD: ${{ needs.prepare.outputs.full_rebuild }}
-          GH_TOKEN: ${{ secrets.BOT_PAT }}
         run: |
           cd repo
           python -m pip install --user --upgrade protobuf
