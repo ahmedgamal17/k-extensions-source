@@ -231,13 +231,13 @@
         "name": "AsmHentai",
         "packageName": "eu.kanade.tachiyomi.extension.all.asmhentai",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.asmhentai-v1.6.14.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.asmhentai-v1.6.15.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/asmhentai/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.asmhentai-v1.6.14.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.asmhentai-v1.6.15.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106014",
-        "versionName": "1.6.14",
+        "versionCode": "106015",
+        "versionName": "1.6.15",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -526,13 +526,13 @@
         "name": "Comikey",
         "packageName": "eu.kanade.tachiyomi.extension.all.comikey",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.comikey-v1.6.14.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.comikey-v1.6.15.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/comikey/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.comikey-v1.6.14.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.comikey-v1.6.15.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106014",
-        "versionName": "1.6.14",
+        "versionCode": "106015",
+        "versionName": "1.6.15",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -598,13 +598,13 @@
         "name": "Coomer",
         "packageName": "eu.kanade.tachiyomi.extension.all.coomer",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.coomer-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.coomer-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/coomer/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.coomer-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.coomer-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -640,13 +640,13 @@
         "name": "Cubari",
         "packageName": "eu.kanade.tachiyomi.extension.all.cubari",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.cubari-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.cubari-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/cubari/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.cubari-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.cubari-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -1486,13 +1486,13 @@
         "name": "HDoujin",
         "packageName": "eu.kanade.tachiyomi.extension.all.hdoujin",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hdoujin-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hdoujin-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/hdoujin/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hdoujin-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hdoujin-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -1762,13 +1762,13 @@
         "name": "HentaiEnvy",
         "packageName": "eu.kanade.tachiyomi.extension.all.hentaienvy",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaienvy-v1.6.12.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaienvy-v1.6.13.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/hentaienvy/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaienvy-v1.6.12.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaienvy-v1.6.13.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106012",
-        "versionName": "1.6.12",
+        "versionCode": "106013",
+        "versionName": "1.6.13",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -1825,13 +1825,13 @@
         "name": "HentaiEra",
         "packageName": "eu.kanade.tachiyomi.extension.all.hentaiera",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaiera-v1.6.13.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaiera-v1.6.14.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/hentaiera/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaiera-v1.6.13.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaiera-v1.6.14.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106013",
-        "versionName": "1.6.13",
+        "versionCode": "106014",
+        "versionName": "1.6.14",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -1888,13 +1888,13 @@
         "name": "HentaiFox",
         "packageName": "eu.kanade.tachiyomi.extension.all.hentaifox",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaifox-v1.6.21.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaifox-v1.6.22.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/hentaifox/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaifox-v1.6.21.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaifox-v1.6.22.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106021",
-        "versionName": "1.6.21",
+        "versionCode": "106022",
+        "versionName": "1.6.22",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -2173,13 +2173,13 @@
         "name": "HentaiRox",
         "packageName": "eu.kanade.tachiyomi.extension.all.hentairox",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentairox-v1.6.13.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentairox-v1.6.14.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/hentairox/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentairox-v1.6.13.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentairox-v1.6.14.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106013",
-        "versionName": "1.6.13",
+        "versionCode": "106014",
+        "versionName": "1.6.14",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -2206,13 +2206,13 @@
         "name": "HentaiZap",
         "packageName": "eu.kanade.tachiyomi.extension.all.hentaizap",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaizap-v1.6.13.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.hentaizap-v1.6.14.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/hentaizap/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaizap-v1.6.13.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.hentaizap-v1.6.14.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106013",
-        "versionName": "1.6.13",
+        "versionCode": "106014",
+        "versionName": "1.6.14",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -2374,13 +2374,13 @@
         "name": "IMHentai",
         "packageName": "eu.kanade.tachiyomi.extension.all.imhentai",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.imhentai-v1.6.26.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.imhentai-v1.6.28.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/imhentai/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.imhentai-v1.6.26.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.imhentai-v1.6.28.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106026",
-        "versionName": "1.6.26",
+        "versionCode": "106028",
+        "versionName": "1.6.28",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -2704,13 +2704,13 @@
         "name": "Kemono",
         "packageName": "eu.kanade.tachiyomi.extension.all.kemono",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.kemono-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.kemono-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/lib-multisrc/kemono/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.kemono-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.kemono-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -2767,44 +2767,32 @@
         "name": "SchaleNetwork",
         "packageName": "eu.kanade.tachiyomi.extension.all.koharu",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.koharu-v1.6.4.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.koharu-v1.6.5.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/schalenetwork/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.koharu-v1.6.4.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.koharu-v1.6.5.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106004",
-        "versionName": "1.6.4",
+        "versionCode": "106005",
+        "versionName": "1.6.5",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
             "id": "713326856395200688",
             "name": "SchaleNetwork",
             "language": "all",
-            "homeUrl": "https://shupogaki.moe",
-            "mirrorUrls": [
-              "https://shupogaki.moe",
-              "https://niyaniya.moe"
-            ]
+            "homeUrl": "https://niyaniya.moe"
           },
           {
             "id": "1484902275639232927",
             "name": "SchaleNetwork",
             "language": "en",
-            "homeUrl": "https://shupogaki.moe",
-            "mirrorUrls": [
-              "https://shupogaki.moe",
-              "https://niyaniya.moe"
-            ]
+            "homeUrl": "https://niyaniya.moe"
           },
           {
             "id": "8839994618804276749",
             "name": "SchaleNetwork",
             "language": "zh",
-            "homeUrl": "https://shupogaki.moe",
-            "mirrorUrls": [
-              "https://shupogaki.moe",
-              "https://niyaniya.moe"
-            ]
+            "homeUrl": "https://niyaniya.moe"
           }
         ]
       },
@@ -3010,13 +2998,13 @@
         "name": "Lunar Manga",
         "packageName": "eu.kanade.tachiyomi.extension.all.lunaranime",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.lunaranime-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.lunaranime-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/lunaranime/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.lunaranime-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.lunaranime-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -3049,13 +3037,13 @@
         "name": "Luscious",
         "packageName": "eu.kanade.tachiyomi.extension.all.luscious",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.luscious-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.luscious-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/luscious/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.luscious-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.luscious-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -3988,13 +3976,13 @@
         "name": "MangaFire",
         "packageName": "eu.kanade.tachiyomi.extension.all.mangafire",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.mangafire-v1.6.37.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.mangafire-v1.6.38.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/mangafire/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.mangafire-v1.6.37.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.mangafire-v1.6.38.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106037",
-        "versionName": "1.6.37",
+        "versionCode": "106038",
+        "versionName": "1.6.38",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -5698,13 +5686,13 @@
         "name": "NHentai.to",
         "packageName": "eu.kanade.tachiyomi.extension.all.nhentaito",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.nhentaito-v1.6.11.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.nhentaito-v1.6.12.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/lib-multisrc/galleryadults/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.nhentaito-v1.6.11.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.nhentaito-v1.6.12.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106011",
-        "versionName": "1.6.11",
+        "versionCode": "106012",
+        "versionName": "1.6.12",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -5740,16 +5728,70 @@
         ]
       },
       {
-        "name": "NHentai.xxx",
-        "packageName": "eu.kanade.tachiyomi.extension.all.nhentaixxx",
+        "name": "NHentai.website",
+        "packageName": "eu.kanade.tachiyomi.extension.all.nhentaiwebsite",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.nhentaixxx-v1.6.12.apk",
-          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/lib-multisrc/galleryadults/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.nhentaixxx-v1.6.12.jar"
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.nhentaiwebsite-v1.6.12.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/nhentaiwebsite/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.nhentaiwebsite-v1.6.12.jar"
         },
         "extensionLib": "1.6",
         "versionCode": "106012",
         "versionName": "1.6.12",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "4655985745385044320",
+            "name": "NHentai.website",
+            "language": "en",
+            "homeUrl": "https://nhentai.website",
+            "mirrorUrls": [
+              "https://nhentai.website",
+              "https://nhentai.jp.net",
+              "https://hitomi.uk",
+              "https://9hentai.uk",
+              "https://9hentai.us"
+            ]
+          },
+          {
+            "id": "6228596842624000114",
+            "name": "NHentai.website",
+            "language": "ja",
+            "homeUrl": "https://nhentai.website",
+            "mirrorUrls": [
+              "https://nhentai.website",
+              "https://nhentai.jp.net",
+              "https://hitomi.uk",
+              "https://9hentai.uk",
+              "https://9hentai.us"
+            ]
+          },
+          {
+            "id": "3013250050770943786",
+            "name": "NHentai.website",
+            "language": "zh",
+            "homeUrl": "https://nhentai.website",
+            "mirrorUrls": [
+              "https://nhentai.website",
+              "https://nhentai.jp.net",
+              "https://hitomi.uk",
+              "https://9hentai.uk",
+              "https://9hentai.us"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NHentai.xxx",
+        "packageName": "eu.kanade.tachiyomi.extension.all.nhentaixxx",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.nhentaixxx-v1.6.13.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/lib-multisrc/galleryadults/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.nhentaixxx-v1.6.13.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106013",
+        "versionName": "1.6.13",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -5782,13 +5824,13 @@
         "name": "Niadd",
         "packageName": "eu.kanade.tachiyomi.extension.all.niadd",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.niadd-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.niadd-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/niadd/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.niadd-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.niadd-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -6457,6 +6499,51 @@
         ]
       },
       {
+        "name": "SexKomix2",
+        "packageName": "eu.kanade.tachiyomi.extension.all.sexkomix2",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.sexkomix2-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/sexkomix2/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.sexkomix2-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "3877278900974745213",
+            "name": "SexKomix2",
+            "language": "en",
+            "homeUrl": "https://sexkomix2.com"
+          },
+          {
+            "id": "4891302486480848697",
+            "name": "SexKomix2",
+            "language": "es",
+            "homeUrl": "https://sexkomix2.com"
+          },
+          {
+            "id": "4410794784958912887",
+            "name": "SexKomix2",
+            "language": "pt",
+            "homeUrl": "https://sexkomix2.com"
+          },
+          {
+            "id": "6301699577565182480",
+            "name": "SexKomix2",
+            "language": "de",
+            "homeUrl": "https://sexkomix2.com"
+          },
+          {
+            "id": "3754032734031888339",
+            "name": "SexKomix2",
+            "language": "ru",
+            "homeUrl": "https://sexkomix2.com"
+          }
+        ]
+      },
+      {
         "name": "Simply Hentai",
         "packageName": "eu.kanade.tachiyomi.extension.all.simplyhentai",
         "resources": {
@@ -6670,13 +6757,13 @@
         "name": "Tappytoon",
         "packageName": "eu.kanade.tachiyomi.extension.all.tappytoon",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.tappytoon-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.tappytoon-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/tappytoon/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.tappytoon-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.tappytoon-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -6925,13 +7012,13 @@
         "name": "Webcomics",
         "packageName": "eu.kanade.tachiyomi.extension.all.webcomics",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.webcomics-v1.6.12.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.webcomics-v1.6.13.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/webcomics/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.webcomics-v1.6.12.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.webcomics-v1.6.13.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106012",
-        "versionName": "1.6.12",
+        "versionCode": "106013",
+        "versionName": "1.6.13",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -8095,19 +8182,49 @@
         "name": "Yaoi Manga Online",
         "packageName": "eu.kanade.tachiyomi.extension.all.yaoimangaonline",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.yaoimangaonline-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-all.yaoimangaonline-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/all/yaoimangaonline/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.yaoimangaonline-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-all.yaoimangaonline-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
             "id": "7988826691692266469",
             "name": "Yaoi Manga Online",
             "language": "all",
+            "homeUrl": "https://yaoimangaonline.com"
+          },
+          {
+            "id": "9170758785588278310",
+            "name": "Yaoi Manga Online",
+            "language": "en",
+            "homeUrl": "https://yaoimangaonline.com"
+          },
+          {
+            "id": "538554294784343580",
+            "name": "Yaoi Manga Online",
+            "language": "ja",
+            "homeUrl": "https://yaoimangaonline.com"
+          },
+          {
+            "id": "5333366346732866061",
+            "name": "Yaoi Manga Online",
+            "language": "zh",
+            "homeUrl": "https://yaoimangaonline.com"
+          },
+          {
+            "id": "5411991591973083095",
+            "name": "Yaoi Manga Online",
+            "language": "ko",
+            "homeUrl": "https://yaoimangaonline.com"
+          },
+          {
+            "id": "6023955409820928295",
+            "name": "Yaoi Manga Online",
+            "language": "es",
             "homeUrl": "https://yaoimangaonline.com"
           }
         ]
@@ -9416,16 +9533,37 @@
         ]
       },
       {
+        "name": "Peach BL",
+        "packageName": "eu.kanade.tachiyomi.extension.ar.peachbl",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ar.peachbl-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/ar/peachbl/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ar.peachbl-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "1091157818486681267",
+            "name": "Peach BL",
+            "language": "ar",
+            "homeUrl": "https://peach-bl.com"
+          }
+        ]
+      },
+      {
         "name": "ProComic",
         "packageName": "eu.kanade.tachiyomi.extension.ar.procomic",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ar.procomic-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ar.procomic-v1.6.10.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/ar/procomic/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ar.procomic-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ar.procomic-v1.6.10.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106010",
+        "versionName": "1.6.10",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -9734,13 +9872,13 @@
         "name": "AllManga",
         "packageName": "eu.kanade.tachiyomi.extension.en.allanime",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.allanime-v1.6.31.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.allanime-v1.6.32.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/allanime/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.allanime-v1.6.31.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.allanime-v1.6.32.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106031",
-        "versionName": "1.6.31",
+        "versionCode": "106032",
+        "versionName": "1.6.32",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -10112,13 +10250,13 @@
         "name": "Athrea Scans",
         "packageName": "eu.kanade.tachiyomi.extension.en.athreascans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.athreascans-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.athreascans-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/athreascans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.athreascans-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.athreascans-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -10210,6 +10348,48 @@
             "name": "Omoi",
             "language": "en",
             "homeUrl": "https://www.omoi.com"
+          }
+        ]
+      },
+      {
+        "name": "BabeSource",
+        "packageName": "eu.kanade.tachiyomi.extension.en.babesource",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.babesource-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/babesource/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.babesource-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "1392050123569941796",
+            "name": "BabeSource",
+            "language": "en",
+            "homeUrl": "https://babesource.com"
+          }
+        ]
+      },
+      {
+        "name": "Baetoon",
+        "packageName": "eu.kanade.tachiyomi.extension.en.baetoon",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.baetoon-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/baetoon/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.baetoon-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6907136690809864188",
+            "name": "Baetoon",
+            "language": "en",
+            "homeUrl": "https://baetoon.com"
           }
         ]
       },
@@ -10406,13 +10586,13 @@
         "name": "buttsmithy",
         "packageName": "eu.kanade.tachiyomi.extension.en.buttsmithy",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.buttsmithy-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.buttsmithy-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/buttsmithy/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.buttsmithy-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.buttsmithy-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -10532,13 +10712,13 @@
         "name": "Coffee Manga (Unoriginal)",
         "packageName": "eu.kanade.tachiyomi.extension.en.coffeemangaunoriginal",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.coffeemangaunoriginal-v1.6.60.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.coffeemangaunoriginal-v1.6.61.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/coffeemangaunoriginal/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.coffeemangaunoriginal-v1.6.60.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.coffeemangaunoriginal-v1.6.61.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106060",
-        "versionName": "1.6.60",
+        "versionCode": "106061",
+        "versionName": "1.6.61",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -10679,13 +10859,13 @@
         "name": "Comix",
         "packageName": "eu.kanade.tachiyomi.extension.en.comix",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.comix-v1.6.61.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.comix-v1.6.63.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/comix/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.comix-v1.6.61.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.comix-v1.6.63.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106061",
-        "versionName": "1.6.61",
+        "versionCode": "106063",
+        "versionName": "1.6.63",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -10697,6 +10877,27 @@
               "https://comix.to",
               "https://comix.ws"
             ]
+          }
+        ]
+      },
+      {
+        "name": "Comizy",
+        "packageName": "eu.kanade.tachiyomi.extension.en.comizy",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.comizy-v1.6.7.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/comizy/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.comizy-v1.6.7.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "7716662751992549719",
+            "name": "Comizy",
+            "language": "en",
+            "homeUrl": "https://comizy.io"
           }
         ]
       },
@@ -11373,6 +11574,27 @@
         ]
       },
       {
+        "name": "Fairies vs Tentacles",
+        "packageName": "eu.kanade.tachiyomi.extension.en.fairiesvstentacles",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.fairiesvstentacles-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/fairiesvstentacles/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.fairiesvstentacles-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "5546045359057470664",
+            "name": "Fairies vs Tentacles",
+            "language": "en",
+            "homeUrl": "https://eldrikdgt.com"
+          }
+        ]
+      },
+      {
         "name": "Flame Comics",
         "packageName": "eu.kanade.tachiyomi.extension.en.flamecomics",
         "resources": {
@@ -11432,6 +11654,27 @@
             "name": "Frieren Online",
             "language": "en",
             "homeUrl": "https://www.frieren.online"
+          }
+        ]
+      },
+      {
+        "name": "Futapo",
+        "packageName": "eu.kanade.tachiyomi.extension.en.futapo",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.futapo-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/futapo/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.futapo-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "6194377622357855889",
+            "name": "Futapo",
+            "language": "en",
+            "homeUrl": "https://futapo.com"
           }
         ]
       },
@@ -11730,6 +11973,27 @@
         ]
       },
       {
+        "name": "HD Porn Comics",
+        "packageName": "eu.kanade.tachiyomi.extension.en.hdporncomics",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.hdporncomics-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/hdporncomics/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.hdporncomics-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "6702817541121796440",
+            "name": "HD Porn Comics",
+            "language": "en",
+            "homeUrl": "https://hdporncomics.com"
+          }
+        ]
+      },
+      {
         "name": "Hentai1.io",
         "packageName": "eu.kanade.tachiyomi.extension.en.hentai1io",
         "resources": {
@@ -11856,6 +12120,27 @@
         ]
       },
       {
+        "name": "HentaiFull",
+        "packageName": "eu.kanade.tachiyomi.extension.en.hentaifull",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.hentaifull-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/hentaifull/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.hentaifull-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "5224200195412086514",
+            "name": "HentaiFull",
+            "language": "en",
+            "homeUrl": "https://hentaifull.net"
+          }
+        ]
+      },
+      {
         "name": "HentaiHere",
         "packageName": "eu.kanade.tachiyomi.extension.en.hentaihere",
         "resources": {
@@ -11922,13 +12207,13 @@
         "name": "HentaiNexus",
         "packageName": "eu.kanade.tachiyomi.extension.en.hentainexus",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.hentainexus-v1.6.21.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.hentainexus-v1.6.22.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/hentainexus/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.hentainexus-v1.6.21.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.hentainexus-v1.6.22.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106021",
-        "versionName": "1.6.21",
+        "versionCode": "106022",
+        "versionName": "1.6.22",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -11964,13 +12249,13 @@
         "name": "HentaiRead",
         "packageName": "eu.kanade.tachiyomi.extension.en.hentairead",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.hentairead-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.hentairead-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/hentairead/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.hentairead-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.hentairead-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -12384,13 +12669,13 @@
         "name": "INKR",
         "packageName": "eu.kanade.tachiyomi.extension.en.inkr",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.inkr-v1.6.3.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.inkr-v1.6.4.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/inkr/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.inkr-v1.6.3.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.inkr-v1.6.4.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106003",
-        "versionName": "1.6.3",
+        "versionCode": "106004",
+        "versionName": "1.6.4",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -12860,6 +13145,27 @@
             "name": "Komix",
             "language": "en",
             "homeUrl": "https://komix.to"
+          }
+        ]
+      },
+      {
+        "name": "Kotokotek",
+        "packageName": "eu.kanade.tachiyomi.extension.en.kotokotek",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.kotokotek-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/kotokotek/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.kotokotek-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "3080817756216633355",
+            "name": "Kotokotek",
+            "language": "en",
+            "homeUrl": "https://kotokotek.wixsite.com"
           }
         ]
       },
@@ -13476,13 +13782,13 @@
         "name": "MangaK",
         "packageName": "eu.kanade.tachiyomi.extension.en.mangabuddy",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangabuddy-v1.6.36.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangabuddy-v1.6.38.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangabuddy/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangabuddy-v1.6.36.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangabuddy-v1.6.38.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106036",
-        "versionName": "1.6.36",
+        "versionCode": "106038",
+        "versionName": "1.6.38",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -13490,6 +13796,27 @@
             "name": "MangaK",
             "language": "en",
             "homeUrl": "https://mangak.io"
+          }
+        ]
+      },
+      {
+        "name": "MangaCherri",
+        "packageName": "eu.kanade.tachiyomi.extension.en.mangacherri",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangacherri-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangacherri/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangacherri-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "9127501903906189261",
+            "name": "MangaCherri",
+            "language": "en",
+            "homeUrl": "https://mangacherri.com"
           }
         ]
       },
@@ -14286,13 +14613,13 @@
         "name": "Manga Drama",
         "packageName": "eu.kanade.tachiyomi.extension.en.mangadrama",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangadrama-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangadrama-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangadrama/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangadrama-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangadrama-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -14552,6 +14879,48 @@
             "name": "MangaHere.onl",
             "language": "en",
             "homeUrl": "https://mangahere.onl"
+          }
+        ]
+      },
+      {
+        "name": "MangaHome",
+        "packageName": "eu.kanade.tachiyomi.extension.en.mangahome",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangahome-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangahome/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangahome-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "933332296024902732",
+            "name": "MangaHome",
+            "language": "en",
+            "homeUrl": "https://www.mangahome.com"
+          }
+        ]
+      },
+      {
+        "name": "MangaHot",
+        "packageName": "eu.kanade.tachiyomi.extension.en.mangahot",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangahot-v1.6.59.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangahot/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangahot-v1.6.59.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106059",
+        "versionName": "1.6.59",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "1536742225206613908",
+            "name": "MangaHot",
+            "language": "en",
+            "homeUrl": "https://mangahot.org"
           }
         ]
       },
@@ -15006,6 +15375,27 @@
         ]
       },
       {
+        "name": "Mangastash",
+        "packageName": "eu.kanade.tachiyomi.extension.en.mangastash",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangastash-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangastash/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangastash-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "5621160175015051314",
+            "name": "Mangastash",
+            "language": "en",
+            "homeUrl": "https://mangastash.org"
+          }
+        ]
+      },
+      {
         "name": "Mangasushi",
         "packageName": "eu.kanade.tachiyomi.extension.en.mangasushi",
         "resources": {
@@ -15114,13 +15504,13 @@
         "name": "Manga.uno",
         "packageName": "eu.kanade.tachiyomi.extension.en.mangauno",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangauno-v1.6.3.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mangauno-v1.6.4.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mangauno/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangauno-v1.6.3.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mangauno-v1.6.4.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106003",
-        "versionName": "1.6.3",
+        "versionCode": "106004",
+        "versionName": "1.6.4",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -15489,6 +15879,27 @@
         ]
       },
       {
+        "name": "ManhwaH",
+        "packageName": "eu.kanade.tachiyomi.extension.en.manhwah",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.manhwah-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/manhwah/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.manhwah-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "3556998591219610081",
+            "name": "ManhwaH",
+            "language": "en",
+            "homeUrl": "https://manhwah.com"
+          }
+        ]
+      },
+      {
         "name": "ManhwaHub.to",
         "packageName": "eu.kanade.tachiyomi.extension.en.manhwahubto",
         "resources": {
@@ -15832,13 +16243,13 @@
         "name": "Mgread.io",
         "packageName": "eu.kanade.tachiyomi.extension.en.mgreadio",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mgreadio-v1.6.7.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.mgreadio-v1.6.8.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/mgreadio/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mgreadio-v1.6.7.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.mgreadio-v1.6.8.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106007",
-        "versionName": "1.6.7",
+        "versionCode": "106008",
+        "versionName": "1.6.8",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -16189,20 +16600,20 @@
         "name": "Nuvia Toon",
         "packageName": "eu.kanade.tachiyomi.extension.en.nuviatoon",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.nuviatoon-v1.6.3.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.nuviatoon-v1.6.4.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/nuviatoon/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.nuviatoon-v1.6.3.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.nuviatoon-v1.6.4.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106003",
-        "versionName": "1.6.3",
+        "versionCode": "106004",
+        "versionName": "1.6.4",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
             "id": "9071935154458913856",
             "name": "Nuvia Toon",
             "language": "en",
-            "homeUrl": "https://nuviatoon.net"
+            "homeUrl": "https://nuviatoon.org"
           }
         ]
       },
@@ -17239,13 +17650,13 @@
         "name": "Renascans",
         "packageName": "eu.kanade.tachiyomi.extension.en.renascans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.renascans-v1.6.29.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.renascans-v1.6.30.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/renascans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.renascans-v1.6.29.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.renascans-v1.6.30.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106029",
-        "versionName": "1.6.29",
+        "versionCode": "106030",
+        "versionName": "1.6.30",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -17958,13 +18369,13 @@
         "name": "Temple Scan",
         "packageName": "eu.kanade.tachiyomi.extension.en.templescan",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.templescan-v1.6.66.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.templescan-v1.6.68.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/templescan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.templescan-v1.6.66.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.templescan-v1.6.68.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106066",
-        "versionName": "1.6.66",
+        "versionCode": "106068",
+        "versionName": "1.6.68",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -18014,6 +18425,27 @@
             "name": "The Blank",
             "language": "en",
             "homeUrl": "https://theblank.net"
+          }
+        ]
+      },
+      {
+        "name": "The Draw Play",
+        "packageName": "eu.kanade.tachiyomi.extension.en.thedrawplay",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.thedrawplay-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/thedrawplay/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.thedrawplay-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "4143405086510283343",
+            "name": "The Draw Play",
+            "language": "en",
+            "homeUrl": "https://www.thedrawplay.com"
           }
         ]
       },
@@ -18098,6 +18530,27 @@
             "name": "The Property of Hate",
             "language": "en",
             "homeUrl": "https://jolleycomics.com"
+          }
+        ]
+      },
+      {
+        "name": "The Wandering Inn",
+        "packageName": "eu.kanade.tachiyomi.extension.en.thewanderinginn",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.thewanderinginn-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/thewanderinginn/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.thewanderinginn-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_SAFE",
+        "sources": [
+          {
+            "id": "6852255829650555639",
+            "name": "The Wandering Inn",
+            "language": "en",
+            "homeUrl": "https://webcomic.wanderinginn.com"
           }
         ]
       },
@@ -18252,13 +18705,13 @@
         "name": "Toonily.me",
         "packageName": "eu.kanade.tachiyomi.extension.en.toonilyme",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.toonilyme-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.toonilyme-v1.6.8.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/toonilyme/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.toonilyme-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.toonilyme-v1.6.8.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106008",
+        "versionName": "1.6.8",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -18663,13 +19116,13 @@
         "name": "Webnex",
         "packageName": "eu.kanade.tachiyomi.extension.en.webnex",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.webnex-v1.6.10.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-en.webnex-v1.6.11.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/en/webnex/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.webnex-v1.6.10.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-en.webnex-v1.6.11.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106010",
-        "versionName": "1.6.10",
+        "versionCode": "106011",
+        "versionName": "1.6.11",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -19356,13 +19809,13 @@
         "name": "Catharsis World",
         "packageName": "eu.kanade.tachiyomi.extension.es.catharsisworld",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-es.catharsisworld-v1.6.5.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-es.catharsisworld-v1.6.6.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/es/catharsisworld/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-es.catharsisworld-v1.6.5.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-es.catharsisworld-v1.6.6.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106005",
-        "versionName": "1.6.5",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -19506,6 +19959,27 @@
         ]
       },
       {
+        "name": "Comics18",
+        "packageName": "eu.kanade.tachiyomi.extension.es.comics18",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-es.comics18-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/es/comics18/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-es.comics18-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "264249399620309998",
+            "name": "Comics18",
+            "language": "es",
+            "homeUrl": "https://comics18.org"
+          }
+        ]
+      },
+      {
         "name": "Dark Room Fansub",
         "packageName": "eu.kanade.tachiyomi.extension.es.darkroomfansub",
         "resources": {
@@ -19635,13 +20109,13 @@
         "name": "Emperor Scan",
         "packageName": "eu.kanade.tachiyomi.extension.es.emperorscan",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-es.emperorscan-v1.6.74.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-es.emperorscan-v1.6.75.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/es/emperorscan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-es.emperorscan-v1.6.74.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-es.emperorscan-v1.6.75.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106074",
-        "versionName": "1.6.74",
+        "versionCode": "106075",
+        "versionName": "1.6.75",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -21580,6 +22054,27 @@
         ]
       },
       {
+        "name": "CrunchyScan (unoriginal)",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.crunchyscan",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.crunchyscan-v1.6.3.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/crunchyscanunoriginal/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.crunchyscan-v1.6.3.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "5122789490740525400",
+            "name": "CrunchyScan (unoriginal)",
+            "language": "fr",
+            "homeUrl": "https://crunchyscan.st"
+          }
+        ]
+      },
+      {
         "name": "Dassou Scan",
         "packageName": "eu.kanade.tachiyomi.extension.fr.dassouscan",
         "resources": {
@@ -21814,13 +22309,13 @@
         "name": "Japscan",
         "packageName": "eu.kanade.tachiyomi.extension.fr.japscan",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.japscan-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.japscan-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/japscan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.japscan-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.japscan-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -21828,6 +22323,27 @@
             "name": "Japscan",
             "language": "fr",
             "homeUrl": "https://www.japscan.foo"
+          }
+        ]
+      },
+      {
+        "name": "Kana Konoha (unoriginal)",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.kanakonohast",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.kanakonohast-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/kanakonohast/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.kanakonohast-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "6030692432959164519",
+            "name": "Kana Konoha (unoriginal)",
+            "language": "fr",
+            "homeUrl": "https://kana-konoha.st"
           }
         ]
       },
@@ -22105,6 +22621,69 @@
         ]
       },
       {
+        "name": "Mangas Origines (unoriginal)",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.mangasoriginesst",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.mangasoriginesst-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/mangasoriginesst/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.mangasoriginesst-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "5013781146332191867",
+            "name": "Mangas Origines (unoriginal)",
+            "language": "fr",
+            "homeUrl": "https://mangas-origines.st"
+          }
+        ]
+      },
+      {
+        "name": "Only Yaoi Scan Trad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.onlyyaoiscantrad",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.onlyyaoiscantrad-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/onlyyaoiscantrad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.onlyyaoiscantrad-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "2059252679939585014",
+            "name": "Only Yaoi Scan Trad",
+            "language": "fr",
+            "homeUrl": "https://yaoi.only-yuri-scan-trad.fr"
+          }
+        ]
+      },
+      {
+        "name": "Only Yuri Scan Trad",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.onlyyuriscantrad",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.onlyyuriscantrad-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/onlyyuriscantrad/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.onlyyuriscantrad-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "4342790297336080426",
+            "name": "Only Yuri Scan Trad",
+            "language": "fr",
+            "homeUrl": "https://only-yuri-scan-trad.fr"
+          }
+        ]
+      },
+      {
         "name": "Ono",
         "packageName": "eu.kanade.tachiyomi.extension.fr.ono",
         "resources": {
@@ -22129,13 +22708,13 @@
         "name": "Ortega Scans",
         "packageName": "eu.kanade.tachiyomi.extension.fr.ortegascans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.ortegascans-v1.6.5.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.ortegascans-v1.6.6.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/ortegascans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.ortegascans-v1.6.5.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.ortegascans-v1.6.6.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106005",
-        "versionName": "1.6.5",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -22234,13 +22813,13 @@
         "name": "Scan-Manga",
         "packageName": "eu.kanade.tachiyomi.extension.fr.scanmanga",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.scanmanga-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.scanmanga-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/scanmanga/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.scanmanga-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.scanmanga-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -22420,6 +22999,27 @@
         ]
       },
       {
+        "name": "Sushiscan (unoriginal)",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.sushiscanst",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.sushiscanst-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/sushiscanst/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.sushiscanst-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "3785501499483736350",
+            "name": "Sushiscan (unoriginal)",
+            "language": "fr",
+            "homeUrl": "https://sushiscan.st"
+          }
+        ]
+      },
+      {
         "name": "Toon FR",
         "packageName": "eu.kanade.tachiyomi.extension.fr.toonfr",
         "resources": {
@@ -22458,6 +23058,27 @@
             "name": "Twatt",
             "language": "fr",
             "homeUrl": "https://twatt.fr"
+          }
+        ]
+      },
+      {
+        "name": "Univers Otaku (unoriginal)",
+        "packageName": "eu.kanade.tachiyomi.extension.fr.universotakust",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-fr.universotakust-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/fr/universotakust/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-fr.universotakust-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "1356033538440383951",
+            "name": "Univers Otaku (unoriginal)",
+            "language": "fr",
+            "homeUrl": "https://univers-otaku.st"
           }
         ]
       },
@@ -22843,20 +23464,20 @@
         "name": "Hwago",
         "packageName": "eu.kanade.tachiyomi.extension.id.hwago",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.hwago-v1.6.58.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.hwago-v1.6.60.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/id/hwago/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.hwago-v1.6.58.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.hwago-v1.6.60.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106058",
-        "versionName": "1.6.58",
+        "versionCode": "106060",
+        "versionName": "1.6.60",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
             "id": "5490253431755133280",
             "name": "Hwago",
             "language": "id",
-            "homeUrl": "https://02.hwago.xyz"
+            "homeUrl": "https://01.hwago.com"
           }
         ]
       },
@@ -22987,23 +23608,23 @@
         ]
       },
       {
-        "name": "APKOMIK",
+        "name": "Komik AV",
         "packageName": "eu.kanade.tachiyomi.extension.id.komikav",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.komikav-v1.6.7.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.komikav-v1.6.8.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/id/komikav/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.komikav-v1.6.7.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.komikav-v1.6.8.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106007",
-        "versionName": "1.6.7",
-        "contentWarning": "CONTENT_WARNING_SAFE",
+        "versionCode": "106008",
+        "versionName": "1.6.8",
+        "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
             "id": "7875815514004535629",
-            "name": "APKOMIK",
+            "name": "Komik AV",
             "language": "id",
-            "homeUrl": "https://01.apkomik.com"
+            "homeUrl": "https://komikav.net"
           }
         ]
       },
@@ -23410,13 +24031,13 @@
         "name": "LumosKomik",
         "packageName": "eu.kanade.tachiyomi.extension.id.lumoskomik",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.lumoskomik-v1.6.58.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.lumoskomik-v1.6.59.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/id/lumoskomik/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.lumoskomik-v1.6.58.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.lumoskomik-v1.6.59.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106058",
-        "versionName": "1.6.58",
+        "versionCode": "106059",
+        "versionName": "1.6.59",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -24229,20 +24850,20 @@
         "name": "Soul Scans",
         "packageName": "eu.kanade.tachiyomi.extension.id.soulscans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.soulscans-v1.6.5.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.soulscans-v1.6.6.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/id/soulscans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.soulscans-v1.6.5.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.soulscans-v1.6.6.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106005",
-        "versionName": "1.6.5",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
             "id": "8061354444776372735",
             "name": "Soul Scans",
             "language": "id",
-            "homeUrl": "https://v1.soulscans.org"
+            "homeUrl": "https://v1.soulscans.asia"
           }
         ]
       },
@@ -24338,13 +24959,13 @@
         "name": "Wurmz",
         "packageName": "eu.kanade.tachiyomi.extension.id.wurmz",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.wurmz-v1.6.4.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-id.wurmz-v1.6.5.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/id/wurmz/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.wurmz-v1.6.4.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-id.wurmz-v1.6.5.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106004",
-        "versionName": "1.6.4",
+        "versionCode": "106005",
+        "versionName": "1.6.5",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -24520,6 +25141,48 @@
             "name": "HentaiFantasy",
             "language": "it",
             "homeUrl": "https://hentaifantasy.it"
+          }
+        ]
+      },
+      {
+        "name": "Hentai ITA",
+        "packageName": "eu.kanade.tachiyomi.extension.it.hentaiita",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-it.hentaiita-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/it/hentaiita/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-it.hentaiita-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "5279259667822182743",
+            "name": "Hentai ITA",
+            "language": "it",
+            "homeUrl": "https://hentai-ita.net"
+          }
+        ]
+      },
+      {
+        "name": "Hentai Zone",
+        "packageName": "eu.kanade.tachiyomi.extension.it.hentaizone",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-it.hentaizone-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/it/hentaizone/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-it.hentaizone-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "7646644620523526397",
+            "name": "Hentai Zone",
+            "language": "it",
+            "homeUrl": "https://hentaizone.me"
           }
         ]
       },
@@ -28469,20 +29132,20 @@
         "name": "Fleur Blanche",
         "packageName": "eu.kanade.tachiyomi.extension.pt.fleurblanche",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.fleurblanche-v1.6.63.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.fleurblanche-v1.6.64.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/fleurblanche/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.fleurblanche-v1.6.63.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.fleurblanche-v1.6.64.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106063",
-        "versionName": "1.6.63",
+        "versionCode": "106064",
+        "versionName": "1.6.64",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
             "id": "2748000026130339026",
             "name": "Fleur Blanche",
             "language": "pt-BR",
-            "homeUrl": "https://fbsquadx.com"
+            "homeUrl": "https://fbsscan.com"
           }
         ]
       },
@@ -29078,13 +29741,13 @@
         "name": "Maid Scan",
         "packageName": "eu.kanade.tachiyomi.extension.pt.maidscan",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.maidscan-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.maidscan-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/maidscan/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.maidscan-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.maidscan-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -29365,6 +30028,27 @@
             "name": "Mediocre Toons",
             "language": "pt-BR",
             "homeUrl": "https://mediocrescan.com"
+          }
+        ]
+      },
+      {
+        "name": "MegaHentai",
+        "packageName": "eu.kanade.tachiyomi.extension.pt.megahentai",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.megahentai-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/megahentai/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.megahentai-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "6293316436960053544",
+            "name": "MegaHentai",
+            "language": "pt-BR",
+            "homeUrl": "https://megahentai.biz"
           }
         ]
       },
@@ -29747,6 +30431,27 @@
         ]
       },
       {
+        "name": "Quadrinhos de Sexo",
+        "packageName": "eu.kanade.tachiyomi.extension.pt.quadrinhosdesexo",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.quadrinhosdesexo-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/quadrinhosdesexo/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.quadrinhosdesexo-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "3633164010012574936",
+            "name": "Quadrinhos de Sexo",
+            "language": "pt-BR",
+            "homeUrl": "https://www.quadrinhosdesexo.com"
+          }
+        ]
+      },
+      {
         "name": "Lura Toon",
         "packageName": "eu.kanade.tachiyomi.extension.pt.randomscan",
         "resources": {
@@ -29999,6 +30704,27 @@
         ]
       },
       {
+        "name": "Super Hentai",
+        "packageName": "eu.kanade.tachiyomi.extension.pt.superhentai",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.superhentai-v1.6.1.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/superhentai/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.superhentai-v1.6.1.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106001",
+        "versionName": "1.6.1",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "2703205747448973944",
+            "name": "Super Hentai",
+            "language": "pt-BR",
+            "homeUrl": "https://superhentai.blog"
+          }
+        ]
+      },
+      {
         "name": "TaimuMangas",
         "packageName": "eu.kanade.tachiyomi.extension.pt.taimumangas",
         "resources": {
@@ -30212,13 +30938,13 @@
         "name": "Vegitoons",
         "packageName": "eu.kanade.tachiyomi.extension.pt.vegitoons",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.vegitoons-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.vegitoons-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/vegitoons/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.vegitoons-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.vegitoons-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -30233,13 +30959,13 @@
         "name": "Verdinha",
         "packageName": "eu.kanade.tachiyomi.extension.pt.verdinha",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.verdinha-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-pt.verdinha-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/pt/verdinha/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.verdinha-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-pt.verdinha-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -30510,13 +31236,13 @@
         "name": "InkStory",
         "packageName": "eu.kanade.tachiyomi.extension.ru.inkstory",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ru.inkstory-v1.6.5.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ru.inkstory-v1.6.6.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/ru/inkstory/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ru.inkstory-v1.6.5.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ru.inkstory-v1.6.6.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106005",
-        "versionName": "1.6.5",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -30741,13 +31467,13 @@
         "name": "PureManga",
         "packageName": "eu.kanade.tachiyomi.extension.ru.puremanga",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ru.puremanga-v1.6.5.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-ru.puremanga-v1.6.6.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/ru/puremanga/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ru.puremanga-v1.6.5.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-ru.puremanga-v1.6.6.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106005",
-        "versionName": "1.6.5",
+        "versionCode": "106006",
+        "versionName": "1.6.6",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -31015,6 +31741,27 @@
             "name": "SlashLib",
             "language": "ru",
             "homeUrl": "https://v2.shlib.life"
+          }
+        ]
+      },
+      {
+        "name": "BocchiManga",
+        "packageName": "eu.kanade.tachiyomi.extension.th.bocchimanga",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-th.bocchimanga-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/th/bocchimanga/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-th.bocchimanga-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "1188327600687907060",
+            "name": "BocchiManga",
+            "language": "th",
+            "homeUrl": "https://bocchi-manga.blogspot.com"
           }
         ]
       },
@@ -31603,6 +32350,27 @@
             "name": "MikuDoujin",
             "language": "th",
             "homeUrl": "https://miku-doujin.com"
+          }
+        ]
+      },
+      {
+        "name": "Neko Hentai",
+        "packageName": "eu.kanade.tachiyomi.extension.th.nekohentai",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-th.nekohentai-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/th/nekohentai/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-th.nekohentai-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_NSFW",
+        "sources": [
+          {
+            "id": "8966822301805339760",
+            "name": "Neko Hentai",
+            "language": "th",
+            "homeUrl": "https://neko-hentai.net"
           }
         ]
       },
@@ -32219,13 +32987,13 @@
         "name": "Hattori Scans",
         "packageName": "eu.kanade.tachiyomi.extension.tr.hattoriscans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.hattoriscans-v1.6.3.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.hattoriscans-v1.6.4.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/hattoriscans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.hattoriscans-v1.6.3.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.hattoriscans-v1.6.4.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106003",
-        "versionName": "1.6.3",
+        "versionCode": "106004",
+        "versionName": "1.6.4",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -32324,13 +33092,13 @@
         "name": "Koreli Manga",
         "packageName": "eu.kanade.tachiyomi.extension.tr.korelimanga",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.korelimanga-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.korelimanga-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/korelimanga/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.korelimanga-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.korelimanga-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -32576,13 +33344,13 @@
         "name": "Manga Portal\u0131",
         "packageName": "eu.kanade.tachiyomi.extension.tr.mangaportali",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.mangaportali-v1.6.2.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.mangaportali-v1.6.3.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/mangaportali/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.mangaportali-v1.6.2.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.mangaportali-v1.6.3.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106002",
-        "versionName": "1.6.2",
+        "versionCode": "106003",
+        "versionName": "1.6.3",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -32597,13 +33365,13 @@
         "name": "Manga Ruhu",
         "packageName": "eu.kanade.tachiyomi.extension.tr.mangaruhu",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.mangaruhu-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.mangaruhu-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/mangaruhu/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.mangaruhu-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.mangaruhu-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -32744,13 +33512,13 @@
         "name": "Merlin Scans",
         "packageName": "eu.kanade.tachiyomi.extension.tr.merlinscans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.merlinscans-v1.6.7.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.merlinscans-v1.6.8.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/merlinscans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.merlinscans-v1.6.7.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.merlinscans-v1.6.8.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106007",
-        "versionName": "1.6.7",
+        "versionCode": "106008",
+        "versionName": "1.6.8",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -32996,13 +33764,13 @@
         "name": "Ori Manga",
         "packageName": "eu.kanade.tachiyomi.extension.tr.orimanga",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.orimanga-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.orimanga-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/orimanga/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.orimanga-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.orimanga-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -33017,13 +33785,13 @@
         "name": "Paradox Scans",
         "packageName": "eu.kanade.tachiyomi.extension.tr.paradoxscans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.paradoxscans-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.paradoxscans-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/paradoxscans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.paradoxscans-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.paradoxscans-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -33059,13 +33827,13 @@
         "name": "Ragnar Scans",
         "packageName": "eu.kanade.tachiyomi.extension.tr.ragnarscans",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.ragnarscans-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.ragnarscans-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/ragnarscans/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.ragnarscans-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.ragnarscans-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -33185,13 +33953,13 @@
         "name": "Siyah Melek",
         "packageName": "eu.kanade.tachiyomi.extension.tr.siyahmelek",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.siyahmelek-v1.6.7.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-tr.siyahmelek-v1.6.8.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/tr/siyahmelek/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.siyahmelek-v1.6.7.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-tr.siyahmelek-v1.6.8.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106007",
-        "versionName": "1.6.7",
+        "versionCode": "106008",
+        "versionName": "1.6.8",
         "contentWarning": "CONTENT_WARNING_NSFW",
         "sources": [
           {
@@ -35305,13 +36073,13 @@
         "name": "TuiTruyen",
         "packageName": "eu.kanade.tachiyomi.extension.vi.tuitruyen",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-vi.tuitruyen-v1.6.6.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-vi.tuitruyen-v1.6.7.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/vi/tuitruyen/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-vi.tuitruyen-v1.6.6.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-vi.tuitruyen-v1.6.7.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106006",
-        "versionName": "1.6.6",
+        "versionCode": "106007",
+        "versionName": "1.6.7",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -35326,13 +36094,13 @@
         "name": "TuLinhTruyen",
         "packageName": "eu.kanade.tachiyomi.extension.vi.tulinhtruyen",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-vi.tulinhtruyen-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-vi.tulinhtruyen-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/vi/tulinhtruyen/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-vi.tulinhtruyen-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-vi.tulinhtruyen-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_SAFE",
         "sources": [
           {
@@ -35456,13 +36224,13 @@
         "name": "YuriGarden",
         "packageName": "eu.kanade.tachiyomi.extension.vi.yurigarden",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-vi.yurigarden-v1.6.14.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-vi.yurigarden-v1.6.15.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/vi/yurigarden/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-vi.yurigarden-v1.6.14.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-vi.yurigarden-v1.6.15.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106014",
-        "versionName": "1.6.14",
+        "versionCode": "106015",
+        "versionName": "1.6.15",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
@@ -36364,6 +37132,27 @@
         ]
       },
       {
+        "name": "Manwa Manhua",
+        "packageName": "eu.kanade.tachiyomi.extension.zh.manwamanhua",
+        "resources": {
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-zh.manwamanhua-v1.6.0.apk",
+          "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/zh/manwamanhua/res/mipmap-xhdpi/ic_launcher.png",
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-zh.manwamanhua-v1.6.0.jar"
+        },
+        "extensionLib": "1.6",
+        "versionCode": "106000",
+        "versionName": "1.6.0",
+        "contentWarning": "CONTENT_WARNING_MIXED",
+        "sources": [
+          {
+            "id": "287323144843032723",
+            "name": "\u6f2b\u86d9\u6f2b\u753b",
+            "language": "zh",
+            "homeUrl": "https://manwadz.cc"
+          }
+        ]
+      },
+      {
         "name": "MH1234",
         "packageName": "eu.kanade.tachiyomi.extension.zh.mh1234",
         "resources": {
@@ -36733,13 +37522,13 @@
         "name": "Xipi Manhua",
         "packageName": "eu.kanade.tachiyomi.extension.zh.xipimanhua",
         "resources": {
-          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-zh.xipimanhua-v1.6.1.apk",
+          "apkUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/apk/tachiyomi-zh.xipimanhua-v1.6.2.apk",
           "iconUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/main/src/zh/xipimanhua/res/mipmap-xhdpi/ic_launcher.png",
-          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-zh.xipimanhua-v1.6.1.jar"
+          "jarUrl": "https://raw.githubusercontent.com/ahmedgamal17/k-extensions-source/repo/jar/tachiyomi-zh.xipimanhua-v1.6.2.jar"
         },
         "extensionLib": "1.6",
-        "versionCode": "106001",
-        "versionName": "1.6.1",
+        "versionCode": "106002",
+        "versionName": "1.6.2",
         "contentWarning": "CONTENT_WARNING_MIXED",
         "sources": [
           {
